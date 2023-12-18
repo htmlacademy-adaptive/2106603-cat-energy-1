@@ -43,62 +43,65 @@
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__manual">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form__view" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="form__item">
-            <fieldset class="form__primary-data">
-              <legend class="visually-hidden">Первичные данные.</legend>
-              <ul class="form__personal-list">
-                <li class="form__personal-item">
-                  <label class="form__control">Имя:*
-                    <input class="form__input" type="text" value="Барсик" name="name">
-                  </label>
-                </li>
-                <li class="form__personal-item">
-                  <label class="form__control">Вес (кг):*
-                    <input class="form__input" type="number" value="7" name="weight">
-                  </label>
-                </li>
-                <li class="form__personal-item">
-                  <label class="form__control">Возраст (лет):
-                    <input class="form__input" type="number" value="7" name="age">
-                  </label>
-                </li>
-              </ul>
-              <ul class="form__programs-list">
-                <li class="form__programs-item">
-                  <label class="form__control">
-                    <input class="visually-hidden form__input" type="radio" value="weight loss" name="program-type" checked>
-                    <span class="form__radio"></span>
-                    <span class="form__label">Похудение</span>
-                  </label>
-                </li>
-                <li class="form__programs-item">
-                  <label class="form__control">
-                    <input class="visually-hidden form__input" type="radio" value="weight gain" name="program-type">
-                    <span class="form__radio"></span>
-                    <span class="form__label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="form__programs-item">
-                  <label class="form__control">
-                    <input class="visually-hidden form__input" type="radio" value="don't know" name="program-type">
-                    <span class="form__radio"></span>
-                    <span class="form__label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__contact-data">
-              <legend class="form__title">Контактные данные (владельца кота)</legend>
-              <div class="form__contact-inputs">
-                <label class="form__control">E-mail:*
-                  <input class="form__input" type="email" name="email" value="кuklachev@gmail.com" pattern=".+@example\.com" required>
+          <fieldset class="form__primary-data">
+            <legend class="visually-hidden">Первичные данные.</legend>
+            <ul class="form__personal-list">
+              <li class="form__personal-item">
+                <label class="form__control">Имя:*
+                  <input class="form__input" type="text" value="Барсик" name="name">
                 </label>
-                <label class="form__control">Телефон:*
-                  <input class="form__input" type="tel" name="phone" value="8 (960) 900-60-90" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              </li>
+              <li class="form__personal-item">
+                <label class="form__control">Вес (кг):*
+                  <input class="form__input" type="number" value="7" name="weight">
                 </label>
-              </div>
-            </fieldset>
-          </div>
+              </li>
+              <li class="form__personal-item">
+                <label class="form__control">Возраст (лет):
+                  <input class="form__input" type="number" value="7" name="age">
+                </label>
+              </li>
+            </ul>
+            <ul class="form__programs-list">
+              <li class="form__programs-item">
+                <label class="form__control">
+                  <input class="visually-hidden form__input" type="radio" value="weight loss" name="program-type" checked>
+                  <span class="form__radio"></span>
+                  <span class="form__label">Похудение</span>
+                </label>
+              </li>
+              <li class="form__programs-item">
+                <label class="form__control">
+                  <input class="visually-hidden form__input" type="radio" value="weight gain" name="program-type">
+                  <span class="form__radio"></span>
+                  <span class="form__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form__programs-item">
+                <label class="form__control">
+                  <input class="visually-hidden form__input" type="radio" value="don't know" name="program-type">
+                  <span class="form__radio"></span>
+                  <span class="form__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__contact-data">
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <div class="form__contact-imputs">
+              <label class="form__control">E-mail:*
+                <input class="form__input" type="email" name="email" value="кuklachev@gmail.com" pattern=".+@example\.com" required>
+              </label>
+              <label class="form__control">Телефон:*
+                <input class="form__input" type="tel" name="phone" value="8 (960) 900-60-90" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="">
+            <legend class="form__title">Комментарий</legend>
+            <label class="visually-hidden" for="comment"></label>
+            <textarea class="form__comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
         </form>
       </div>
     </section>
