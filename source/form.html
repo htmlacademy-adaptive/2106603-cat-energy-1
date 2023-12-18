@@ -102,7 +102,43 @@
             <label class="visually-hidden" for="comment"></label>
             <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-
+          <fieldset class="form__additional">
+            <legend class="form__title">Дополнительно</legend>
+            <ul class="form__add-list">
+              <li class="form__add-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="sweetener" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="form__add-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="water">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="form__add-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="milk">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Молоко</span>
+                </label>
+              </li>
+              <li class="form__add-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="vitamins">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Bитамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__wrap-button">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <span class="form__footnote">* — Обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
