@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/program-objectives.scss";
+@use "./blocks/weight-loss.scss";
+@use "./blocks/program-text.scss";
+@use "./blocks/description-product.scss";
+@use "./blocks/example.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/main-inner.scss";
+@use "./blocks/form-selection.scss";
+@use "./blocks/form.scss";
+@use "./blocks/control.scss";
+@use "./blocks/products.scss";
+@use "./blocks/main-catalog.scss";
+@use "./blocks/descript.scss";
+@use "./blocks/add-list.scss";
+@use "./blocks/add-products.scss";
+@use "./blocks/add-catalog.scss";
+@use "./blocks/button.scss";
