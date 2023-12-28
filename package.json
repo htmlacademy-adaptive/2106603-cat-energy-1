@@ -37,7 +37,7 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^16"
+    "node": "^12"
   },
   "type": "module"
 }
