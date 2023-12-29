@@ -23,3 +23,14 @@
 @use "./blocks/add-products.scss";
 @use "./blocks/add-catalog.scss";
 @use "./blocks/button.scss";
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  margin: 0;
+  width: 320px;
+  background-color: #ffffff;
+  color: #444444;
+}
