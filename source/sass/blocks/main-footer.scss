@@ -12,14 +12,19 @@
   display: block;
 }
 
-.main-footer__social {
+.social {
   padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 }
 
 .social__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 132px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer__copyright {
