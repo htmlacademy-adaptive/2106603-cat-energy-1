@@ -1,5 +1,7 @@
+//базовые стили
 @use "./blocks/fonts.scss";
-@use "./blocks/body.scss";
+@use "./blocks/base.scss";
+//стили блоков
 @use "./blocks/main-header.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/site-list.scss";
