@@ -1,6 +1,7 @@
 .promo {
-  background-image: url("../img/main-page/index-background-mobile.jpg");
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/index-background-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 320px 302px;
   background-position: top;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -32,4 +33,10 @@
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+}
+
+.promo__link {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
 }
