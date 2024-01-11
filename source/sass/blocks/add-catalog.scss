@@ -1,3 +1,7 @@
+.add-catalog {
+  @include list-reset;
+}
+
 .add-catalog__link {
   text-decoration: none;
   display: block;
