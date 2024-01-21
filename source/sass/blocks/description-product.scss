@@ -1,0 +1,8 @@
+.description-product {
+  width: 280px;
+  margin: 0 auto 50px;
+}
+
+.description-product__list {
+  @include list-reset;
+}

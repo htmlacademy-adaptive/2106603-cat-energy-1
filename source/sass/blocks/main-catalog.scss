@@ -1,0 +1,24 @@
+.main-catalog {
+  @include list-reset;
+}
+
+.main-catalog__item {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.main-catalog__link {
+  text-decoration: none;
+  display: block;
+}
+
+.main-catalog__title {
+  margin: 0;
+  color: $special_dark-grey;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+.button {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  width: 280px;
+  background: $green;
+  color: $white;
+  border: none;
+}
+
+.button--differing {
+  background: $lightgrey;
+  color: $dark-grey;
+}

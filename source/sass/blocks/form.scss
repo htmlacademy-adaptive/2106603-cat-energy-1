@@ -1,0 +1,34 @@
+.form__manual {
+  font-size: 14px;
+}
+
+.form__personal-list {
+  @include list-reset;
+}
+
+.form__programs-list {
+  @include list-reset;
+}
+
+.form__input {
+  font: inherit;
+  color: $dark-grey;
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  font: inherit;
+  color: $dark-grey;
+  text-transform: uppercase;
+}
+
+.form__footnote {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.form__button {
+  margin-bottom: 21px;
+}
