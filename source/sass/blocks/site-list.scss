@@ -17,9 +17,11 @@
   }
 }
 
-.site-list__item--current {
-  padding-bottom: 10px;
-  border-bottom: 2px solid $green;
+@media (min-width: $tablet-width) {
+  .site-list__item--current {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $green;
+  }
 }
 
 .site-list__item {
