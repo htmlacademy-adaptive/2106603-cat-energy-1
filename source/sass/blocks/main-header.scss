@@ -12,11 +12,16 @@
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 14px auto;
+  padding: 14px 0;
   max-width: $desktop-width;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 25px 0 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 32px;
   }
 }
