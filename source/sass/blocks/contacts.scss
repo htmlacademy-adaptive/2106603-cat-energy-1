@@ -1,9 +1,8 @@
 .contacts__wrapper {
-  width: 280px;
-  margin: 0 auto;
   padding-top: 26px;
   padding-bottom: 26px;
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts__invite {
@@ -12,6 +11,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
 }
 
 .contacts__address {
@@ -19,4 +19,5 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  width: 140px;
 }
