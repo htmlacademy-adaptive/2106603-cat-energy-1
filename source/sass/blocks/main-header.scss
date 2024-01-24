@@ -10,6 +10,13 @@
 }
 
 .main-header__wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 14px auto;
-  width: 280px;
+  max-width: $desktop-width;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
