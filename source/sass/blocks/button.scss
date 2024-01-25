@@ -17,3 +17,9 @@
   height: 40px;
   padding: 10px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .button--catalog {
+    width: 250px;
+  }
+}
