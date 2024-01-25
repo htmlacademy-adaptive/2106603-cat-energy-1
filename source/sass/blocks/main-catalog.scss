@@ -22,3 +22,17 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    width: 324px;
+    height: 511px;
+  }
+
+  .main-catalog__item {
+    padding: 10px 37px 40px;
+  }
+}
