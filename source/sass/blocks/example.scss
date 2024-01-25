@@ -1,44 +1,22 @@
 .example {
   background-color: #eaeaea;
   padding: 25px 0 40px;
-
-  @media (min-width: $tablet-width) {
-    padding: 45px 0 100px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 75px;
-  }
 }
 
 .example__title {
   margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
-  }
 }
 
-@media (min-width: $desktop-width) {
-  .example__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .example__info {
-    width: 436px;
-  }
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__statistics {
   @include list-reset;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .example__item {
@@ -69,9 +47,20 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
 }
 
+//Медиазапросы
+
 @media (min-width: $tablet-width) {
+  .example {
+    padding: 45px 0 100px;
+  }
+
+  .example__title {
+    margin-bottom: 60px;
+  }
+
   .example__quantity {
     font-size: 30px;
     line-height: 37px;
@@ -83,6 +72,34 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
+
+  .example__title {
+    margin-bottom: 75px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__info {
+    width: 436px;
+  }
+
+  .example__description {
+    margin-bottom: 69px;
+  }
+
+  .example__statistics {
+    margin-bottom: 55px;
+  }
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .example__info {
     display: grid;
@@ -91,6 +108,7 @@
     grid-template-areas:
       "description description description"
       "statistics statistics expenses";
+    margin-bottom: 100px;
   }
 
   .example__description {
