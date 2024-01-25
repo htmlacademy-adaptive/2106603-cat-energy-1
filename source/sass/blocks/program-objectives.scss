@@ -6,3 +6,16 @@
   background-color: $lightgrey;
   height: 266px;
 }
+
+@media (min-width: $desktop-width) {
+  .program-objectives__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .program-objectives__item {
+    width: 570px;
+    height: 374px;
+  }
+}
