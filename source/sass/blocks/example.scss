@@ -17,6 +17,18 @@
   margin: 25px auto 40px;
 }
 
+.example__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
 .example__statistics {
   @include list-reset;
 }
