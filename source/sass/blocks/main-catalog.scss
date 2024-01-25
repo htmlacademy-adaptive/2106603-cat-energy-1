@@ -7,6 +7,8 @@
   padding-bottom: 25px;
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr;
+  row-gap: 17px;
 }
 
 .main-catalog__link {
