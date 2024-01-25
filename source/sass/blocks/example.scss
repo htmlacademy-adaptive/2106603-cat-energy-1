@@ -31,6 +31,14 @@
 
 .example__statistics {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  width: 124px;
+  display: flex;
+  flex-direction: column;
 }
 
 .example__quantity {
@@ -54,4 +62,16 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example__quantity {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
