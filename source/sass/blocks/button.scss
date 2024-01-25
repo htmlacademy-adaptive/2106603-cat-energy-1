@@ -11,6 +11,8 @@
 .button--differing {
   background: $lightgrey;
   color: $dark-grey;
+  height: 40px;
+  padding: 10px 0;
 }
 
 .button--catalog {
@@ -20,6 +22,10 @@
 
 @media (min-width: $tablet-width) {
   .button--catalog {
+    width: 250px;
+  }
+
+  .button--differing {
     width: 250px;
   }
 }

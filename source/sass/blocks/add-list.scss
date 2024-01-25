@@ -26,3 +26,19 @@
   text-decoration: none;
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .add-list__portion {
+    font-size: 20px;
+    line-height: 24px;
+    width: 134px;
+    margin: 0 auto 23px;
+  }
+
+  .add-list__slogan {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    margin: 0 auto 82px;
+  }
+}
