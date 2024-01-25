@@ -1,5 +1,15 @@
 .example {
   background-color: #eaeaea;
+  padding: 25px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
 }
 
 .example__wrapper {
