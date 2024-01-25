@@ -43,6 +43,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-catalog__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .products__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -52,7 +61,8 @@
   .main-catalog__item {
     width: 324px;
     height: 511px;
-    padding: 10px 37px 40px;
-    text-align: center;
+    padding: 0 37px 40px 37px;
+    display: flex;
+    flex-direction: column;
   }
 }
