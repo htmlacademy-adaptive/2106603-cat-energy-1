@@ -1,7 +1,6 @@
 .descript {
   font-size: 16px;
   line-height: 20px;
-  text-align: end;
 }
 
 @media (max-width: $tablet-width) {
@@ -14,6 +13,7 @@
     &--add {
       font-size: 14px;
       line-height: 14px;
+      text-align: end;
     }
   }
 }
