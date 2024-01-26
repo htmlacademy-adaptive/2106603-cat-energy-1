@@ -20,3 +20,9 @@
     line-height: 36px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .add-products__pack {
+    display: flex;
+  }
+}

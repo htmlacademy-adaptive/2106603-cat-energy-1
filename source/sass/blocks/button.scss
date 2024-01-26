@@ -36,3 +36,12 @@
     grid-column: 1/3;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button--add {
+    width: 244px;
+    height: 40px;
+    padding: 10px 0;
+    grid-column: 3/4;
+  }
+}
