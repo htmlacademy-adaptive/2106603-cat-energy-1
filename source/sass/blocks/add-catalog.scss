@@ -1,6 +1,9 @@
 .add-catalog {
   @include list-reset;
-  padding: 25px 0 35px;
+}
+
+.add-products__list {
+  padding: 13px 0 19px;
 }
 
 .add-catalog__link {
@@ -28,6 +31,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-bottom: 15px;
 }
 
@@ -64,6 +68,10 @@
   .add-catalog__title {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .add-products__list {
+    padding: 26px 37px 28px;
   }
 
   .add-catalog__item {
