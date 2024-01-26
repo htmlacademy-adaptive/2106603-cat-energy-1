@@ -15,10 +15,18 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  margin-bottom: 13px;
 }
 
 .add-catalog__item {
   padding: 12px 0 19px;
+}
+
+.add-catalog__descript {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
 }
 
 .add-catalog__item:last-child {
