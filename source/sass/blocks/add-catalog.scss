@@ -31,22 +31,23 @@
   margin-bottom: 15px;
 }
 
-.add-catalog__item:last-child {
+/*.add-catalog__item:last-child {
   background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog.png");
   background-repeat: no-repeat;
   height: 290px;
-}
+}*/
 
 .add-catalog__victory {
   position: relative;
-  margin: 0 auto;
   padding-top: 175px;
-  width: 160px;
   color: $white;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog.png");
+  background-repeat: no-repeat;
+  height: 290px;
 }
 
 .add-catalog__victory::before {
