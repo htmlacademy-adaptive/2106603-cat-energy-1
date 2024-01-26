@@ -1,8 +1,18 @@
-.descript--main {
-  font-size: 12px;
-  line-height: 16px;
+.descript {
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.descript--add {
-  line-height: 14px;
+@media (max-width: $tablet-width) {
+  .descript {
+    &--main {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &--add {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
 }
