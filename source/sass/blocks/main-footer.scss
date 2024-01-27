@@ -16,3 +16,11 @@
 .main-footer__copyright {
   margin-top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
