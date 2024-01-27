@@ -1,9 +1,6 @@
 .add-catalog {
-  @include list-reset;
-}
-
-.add-products__list {
-  padding: 13px 0 19px;
+  list-style: none;
+  margin: 0;
 }
 
 .add-catalog__link {
