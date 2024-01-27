@@ -48,3 +48,20 @@
     height: 400px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    z-index: 1;
+    width: 565px;
+    height: 199px;
+    padding: 60px 74px 60px 80px;
+    background-color: $white;
+  }
+
+  .contacts__map {
+    position: relative;
+    width: 1440px;
+    height: 400px;
+  }
+}
