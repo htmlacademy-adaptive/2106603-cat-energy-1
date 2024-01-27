@@ -32,6 +32,8 @@
 @media (min-width: $desktop-width) {
   .add-products__pack {
     display: flex;
+    justify-content: space-between;
+    margin: 80px 0 87px;
   }
 
   .add-products__list {
