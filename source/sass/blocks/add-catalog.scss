@@ -77,6 +77,10 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+
+  .add-catalog__victory {
+    margin: 70px 0 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
