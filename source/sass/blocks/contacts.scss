@@ -57,11 +57,16 @@
     height: 199px;
     padding: 60px 74px 60px 80px;
     background-color: $white;
+    top: 95px;
+  }
+
+  .contacts__container {
+    position: relative;
+    height: 400px;
   }
 
   .contacts__map {
-    position: relative;
     width: 1440px;
-    height: 400px;
+    margin: 0 -110px;
   }
 }
