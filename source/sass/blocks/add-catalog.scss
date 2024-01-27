@@ -69,10 +69,6 @@
     line-height: 20px;
   }
 
-  .add-products__list {
-    padding: 26px 37px 28px;
-  }
-
   .add-catalog__item {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -86,5 +82,10 @@
 @media (min-width: $desktop-width) {
   .add-catalog__item {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .add-catalog__victory {
+    width: 245px;
+    height: 288px;
   }
 }

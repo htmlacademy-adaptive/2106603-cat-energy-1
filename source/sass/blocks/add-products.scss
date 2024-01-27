@@ -19,10 +19,19 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  .add-products__list {
+    padding: 26px 37px 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .add-products__pack {
     display: flex;
+  }
+
+  .add-products__list {
+    width: 895px;
+    padding: 0;
   }
 }
