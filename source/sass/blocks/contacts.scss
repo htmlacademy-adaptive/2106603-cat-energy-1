@@ -21,3 +21,26 @@
   font-style: normal;
   width: 140px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 61px 50px;
+  }
+
+  .contacts__invite {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    width: 157px;
+    height: 80px;
+    text-align: end;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 400px;
+  }
+}
