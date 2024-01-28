@@ -8,11 +8,6 @@
 
 .form__add-list {
   @include list-reset;
-  width: 768px;
-  padding: 57px 50px 52px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
 }
 
 .form__input {
@@ -40,4 +35,21 @@
 
 .form__add-item {
   width: 225px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__add-list {
+    padding: 57px 50px 52px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__add-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 57px 0 60px;
+  }
 }
