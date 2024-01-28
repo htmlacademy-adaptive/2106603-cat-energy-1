@@ -30,3 +30,15 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__title {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+    text-align: start;
+  }
+}
