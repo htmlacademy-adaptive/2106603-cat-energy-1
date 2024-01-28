@@ -6,6 +6,15 @@
   @include list-reset;
 }
 
+.form__add-list {
+  @include list-reset;
+  width: 768px;
+  padding: 57px 50px 52px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
 .form__input {
   font: inherit;
   color: $dark-grey;
@@ -27,4 +36,8 @@
 
 .form__button {
   margin-bottom: 21px;
+}
+
+.form__add-item {
+  width: 225px;
 }
