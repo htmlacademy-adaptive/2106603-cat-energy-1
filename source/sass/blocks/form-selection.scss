@@ -18,3 +18,16 @@
   font-size: 14px;
   margin: 0 0 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-selection__wrapper {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-selection__wrapper {
+    padding-bottom: 79px;
+  }
+}
