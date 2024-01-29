@@ -3,6 +3,11 @@
   line-height: 20px;
 }
 
+.descript__meaning {
+  margin: 0;
+  text-align: end;
+}
+
 @media (max-width: $tablet-width) {
   .descript {
     &--main {

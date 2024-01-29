@@ -37,11 +37,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.descript__meaning {
-  margin: 0;
-  text-align: end;
-}
-
 @media (min-width: $tablet-width) {
   .main-catalog__title {
     font-size: 20px;
@@ -64,11 +59,6 @@
   .main-catalog__item:last-child {
     background-color: $white;
     border: 2px solid $lightgrey;
-  }
-
-  .descript {
-    font-size: 16px;
-    line-height: 20px;
   }
 
   .main-catalog__next {
