@@ -5,3 +5,18 @@
 .products__title {
   margin-bottom: 41px;
 }
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}

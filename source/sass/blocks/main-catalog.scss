@@ -52,12 +52,6 @@
     text-align: center;
   }
 
-  .products__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-  }
-
   .main-catalog__item {
     width: 324px;
     height: 511px;
@@ -73,5 +67,13 @@
 
   .main-catalog__next {
     padding: 50px 20px 40px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__item {
+    width: 245px;
+    height: 430px;
+    padding: 0 38px 40px 38px;
   }
 }
