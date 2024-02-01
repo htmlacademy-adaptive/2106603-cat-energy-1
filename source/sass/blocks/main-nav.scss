@@ -7,12 +7,14 @@
 .main-nav__toggle {
   position: absolute;
   right: 0;
-  top: -24px;
+  top: -48px;
   width: 24px;
   height: 24px;
   display: block;
   z-index: 2;
   border: none;
+  padding: 0;
+  background-color: $white;
 
   &:hover {
     opacity: 0.8;
@@ -21,6 +23,31 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow:
+    0 8px 0 0 $black,
+    0 16px 0 0 $black;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  box-shadow:
+    0 8px 0 0 fade($black, 80%),
+    0 16px 0 0 fade($black, 80%);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  box-shadow:
+    0 8px 0 0 fade($black, 60%),
+    0 16px 0 0 fade($black, 60%);
 }
 
 @media (min-width: $tablet-width) {
