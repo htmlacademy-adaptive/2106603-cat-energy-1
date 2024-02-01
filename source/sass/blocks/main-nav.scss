@@ -1,3 +1,28 @@
+.main-nav {
+  position: relative;
+  width: auto;
+  min-height: 199px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: -24px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  z-index: 2;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
