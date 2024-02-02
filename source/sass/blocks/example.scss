@@ -1,14 +1,28 @@
 .example {
   background-color: #eaeaea;
+  padding: 25px 0 40px;
 }
 
-.example__wrapper {
-  width: 280px;
-  margin: 25px auto 40px;
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__statistics {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.example__item {
+  width: 124px;
+  display: flex;
+  flex-direction: column;
 }
 
 .example__quantity {
@@ -32,4 +46,83 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+//Медиазапросы
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 45px 0 100px;
+  }
+
+  .example__title {
+    margin-bottom: 60px;
+  }
+
+  .example__quantity {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
+
+  .example__title {
+    margin-bottom: 75px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__info {
+    width: 436px;
+  }
+
+  .example__description {
+    margin-bottom: 69px;
+  }
+
+  .example__statistics {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .example__info {
+    display: grid;
+    row-gap: 55px;
+    column-gap: 167px;
+    grid-template-areas:
+      "description description description"
+      "statistics statistics expenses";
+    margin-bottom: 100px;
+  }
+
+  .example__description {
+    grid-area: description;
+  }
+
+  .example__statistics {
+    width: 367px;
+    grid-area: statistics;
+  }
+
+  .example__expenses {
+    text-align: end;
+    width: 174px;
+    grid-area: expenses;
+  }
 }

@@ -10,3 +10,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}

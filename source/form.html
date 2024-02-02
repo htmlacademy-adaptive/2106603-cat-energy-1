@@ -2,35 +2,38 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи, анкета</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo-img" href="index.html" >
-        <img src="img/logo.svg" width="33" height="38" alt="Логотип.">
-      </a>
-      <a class="main-header__logo-brand" href="index.html">
-        <img src="img/logo-header.svg" width="101" height="18" alt="Название бренда.">
-      </a>
+    <div class="main-header__wrapper container">
+      <div class="main-header__logo logo">
+        <a class="logo__img">
+          <img src="img/logo.svg" width="33" height="38" alt="Логотип.">
+        </a>
+        <a class="logo__brand">
+          <img src="img/logo-header.svg" width="101" height="18" alt="Название бренда.">
+        </a>
+      </div>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a>
+            <a class="site-list__link">
               Подбор программы
             </a>
           </li>
@@ -40,10 +43,10 @@
   </header>
   <main class="main-inner">
     <section class="form-selection">
-      <div class="form-selection__wrapper form">
-        <h1 class="form__title title-common">Подбор программы</h1>
-        <p class="form__manual">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="form__view" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="form-selection__wrapper container">
+        <h1 class="form-selection__title title-common">Подбор программы</h1>
+        <p class="form-selection__manual">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form-selection__view form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__primary-data">
             <legend class="visually-hidden">Первичные данные.</legend>
             <ul class="form__personal-list">
@@ -138,17 +141,19 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты.</h2>
-      <div class="contacts__wrapper">
-        <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <div class="contacts__map">
-        <img src="img/main-page/location.png" width="320" height="362" alt="Карта">
+      <div class="contacts__container container">
+        <div class="contacts__wrapper">
+          <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map">
+          <img src="img/main-page/location.png" width="320" height="362" alt="Карта">
+        </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container">
       <a class="main-footer__logo-brand" href="index.html">
         <img src="img/logo-footer.svg" width="128" height="24" alt="Название бренда.">
       </a>
@@ -185,7 +190,7 @@
           HTML Academy
         </a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="60" height="60" alt="Логотип HTML Academy">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>

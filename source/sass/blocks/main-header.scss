@@ -7,9 +7,24 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 74px;
+  }
 }
 
 .main-header__wrapper {
-  margin: 14px auto;
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+  max-width: $desktop-width;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

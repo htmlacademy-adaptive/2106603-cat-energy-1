@@ -1,3 +1,39 @@
 .site-list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+    font-size: 20px;
+    line-height: normal;
+    /*color: $white;*/
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item--current {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $green;
+  }
+}
+
+.site-list__item {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list__link {
+  @include link-edit;
 }
