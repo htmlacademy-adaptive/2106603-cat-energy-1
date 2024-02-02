@@ -9,6 +9,8 @@
     width: 436px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -43,20 +45,18 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin: 0;
   }
 }
 
 .site-list__link {
   @include link-edit;
   display: block;
-  padding: 23px 0;
   text-align: center;
+  padding: 10px 0;
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__item--current {
-    padding-bottom: 10px;
+  .site-list__item--current .site-list__link {
     border-bottom: 2px solid $green;
   }
 }
