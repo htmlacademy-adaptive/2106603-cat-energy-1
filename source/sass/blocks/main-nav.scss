@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   width: auto;
-  min-height: 199px;
 }
 
 .main-nav__toggle {
@@ -78,6 +77,12 @@
   &:active::before,
   &:active::after {
     opacity: 0.6;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav--closed .site-list__item {
+    display: none;
   }
 }
 
