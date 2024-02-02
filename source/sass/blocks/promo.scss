@@ -1,17 +1,20 @@
 .promo {
-  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/index-background-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
-  background-position: top;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px 302px;
+    background-position: top;
+  }
 }
 
 .promo__wrapper {
   margin-bottom: 20px;
-  padding-top: 27px;
+  padding-top: 65px;
 }
 
 .promo__title {
