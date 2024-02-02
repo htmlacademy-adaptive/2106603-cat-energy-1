@@ -3,6 +3,14 @@
   width: auto;
 }
 
+.main-nav__list {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    background-color: $white;
+    width: 320px;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   right: 0;
