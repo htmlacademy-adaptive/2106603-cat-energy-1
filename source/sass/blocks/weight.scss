@@ -15,6 +15,9 @@
 }
 
 .weight__link {
+  display: block;
+  height: 38px;
+  width: 165px;
   padding: 11px 0;
   position: relative;
 
@@ -24,16 +27,16 @@
     width: 18px;
     height: 2px;
     background-color: $black;
-    top: 22px;
-    left: 105px;
+    top: 18px;
+    left: 128px;
   }
 }
 
 .weight__arrow {
   position: relative;
   grid-area: link;
+  align-self: center;
   height: 38px;
-  padding: 11px 0;
   width: 165px;
   padding-right: 11px;
 }
@@ -49,7 +52,7 @@
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-right-style: none;
-  right: 31px;
+  right: 13px;
   top: 13px;
 }
 
