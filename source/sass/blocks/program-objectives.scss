@@ -2,9 +2,28 @@
   margin: 20px 0;
 }
 
+.program-objectives__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .program-objectives__item {
   background-color: $lightgrey;
   height: 266px;
+  padding: 20px;
+  display: grid;
+  gap: 13px;
+  grid-template-areas:
+    "img title"
+    "descript descript"
+    "link link";
+}
+
+@media (min-width: $tablet-width) {
+  .program-objectives {
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
