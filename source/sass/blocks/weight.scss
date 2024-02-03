@@ -10,8 +10,45 @@
 .weight__description {
   margin: 0;
   grid-area: descript;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $line-grey;
 }
 
 .weight__link {
+  padding: 11px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: $black;
+    top: 22px;
+    left: 105px;
+  }
+}
+
+.weight__arrow {
+  position: relative;
   grid-area: link;
+  height: 38px;
+  padding: 11px 0;
+  width: 160px;
+  padding-right: 11px;
+}
+
+.weight__arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  border-color: $black;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-style: none;
+  right: 31px;
+  top: 13px;
 }
