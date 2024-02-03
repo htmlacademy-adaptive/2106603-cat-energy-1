@@ -52,3 +52,27 @@
   right: 31px;
   top: 13px;
 }
+
+@media (min-width: $tablet-width) {
+  .weight__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .weight__img {
+    width: 200px;
+  }
+
+  .weight__description {
+    border: none;
+    padding-bottom: 0;
+    width: 340px;
+    color: $black;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .weight__link {
+    font-size: 20px;
+  }
+}

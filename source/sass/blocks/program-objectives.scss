@@ -25,6 +25,16 @@
   .program-objectives {
     margin: 0;
   }
+
+  .program-objectives__item {
+    height: 372px;
+    padding: 75px 50px 50px;
+    column-gap: 45px;
+    grid-template-areas:
+      "title title img"
+      "descript descript img"
+      "link link img";
+  }
 }
 
 @media (min-width: $desktop-width) {
