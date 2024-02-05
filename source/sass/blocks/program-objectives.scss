@@ -24,6 +24,7 @@
 @media (min-width: $tablet-width) {
   .program-objectives {
     margin: 0;
+    margin-bottom: 50px;
   }
 
   .program-objectives__item {
@@ -38,6 +39,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program-objectives {
+    margin-bottom: 70px;
+  }
+
   .program-objectives__wrapper {
     display: flex;
     flex-direction: row;
