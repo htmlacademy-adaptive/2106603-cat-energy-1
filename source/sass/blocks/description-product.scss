@@ -109,10 +109,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .description-product__wrapper {
+    margin-bottom: 70px;
+  }
+
   .description-product__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 95px;
-    margin-bottom: 69px;
   }
 
   .description-product__item {
