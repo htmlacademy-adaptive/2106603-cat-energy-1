@@ -45,24 +45,40 @@
 .description-product__text {
   margin: 0;
   margin-left: 78px;
-  width: 200px;
-  height: 54px;
+  min-width: 200px;
+  min-height: 54px;
 }
 
 @media (min-width: $tablet-width) {
+  .description-product__wrapper {
+    margin-bottom: 47px;
+  }
+
   .description-product__title {
     margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .description-product__list {
     grid-template-columns: 1fr 1fr;
     gap: 37px 154px;
-    margin-bottom: 47px;
   }
 
   .description-product__item {
-    width: 246px;
-    height: 280px;
+    width: 230px;
+  }
+
+  .description-product__text {
+    margin: 150px 0 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .description-product__item::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
   }
 }
 
