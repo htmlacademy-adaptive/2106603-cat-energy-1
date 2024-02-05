@@ -1,5 +1,5 @@
 .description-product__wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .description-product__title {
@@ -10,7 +10,6 @@
   @include list-reset;
   display: grid;
   gap: 26px;
-  padding-bottom: 20px;
 }
 
 .description-product__item {
