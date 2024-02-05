@@ -16,13 +16,14 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .example__item {
   width: 124px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .example__quantity {
@@ -31,12 +32,23 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
+  width: 124px;
+  height: 56px;
+  border: 1px solid $special_grey;
+  border-radius: 3px;
+  padding-top: 10px;
 }
 
 .example__text {
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  width: 80px;
+  position: absolute;
+  top: 46px;
+  left: 22px;
+  background-color: $special_ligh-grey1;
+  z-index: 1;
 }
 
 .example__expenses {
