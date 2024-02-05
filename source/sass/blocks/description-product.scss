@@ -1,3 +1,7 @@
+.description-product__wrapper {
+  margin-bottom: 30px;
+}
+
 .description-product__title {
   margin-bottom: 40px;
 }
@@ -6,11 +10,13 @@
   @include list-reset;
   display: grid;
   gap: 26px;
-  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .description-product__item {
   position: relative;
+  min-height: 60px;
+  align-self: center;
 
   &--benefit::before {
     background: url("../../img/main-page/technology-benefit.png") no-repeat;
