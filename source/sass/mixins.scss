@@ -8,3 +8,9 @@
   text-decoration: none;
   color: inherit;
 }
+
+@mixin fieldset-edit {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
