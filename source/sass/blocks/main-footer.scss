@@ -17,6 +17,14 @@
 .main-footer__logo-brand {
   margin-bottom: 20px;
   display: block;
+
+  &:hover path {
+    fill: #3e3e3e;
+  }
+
+  &:active path {
+    fill: #6b6b6b;
+  }
 }
 
 .main-footer__copyright {
