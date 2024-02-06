@@ -12,11 +12,19 @@
 
 .form-selection__title {
   margin-bottom: 37px;
+  line-height: 36px;
 }
 
 .form-selection__manual {
   font-size: 14px;
   margin: 0 0 39px;
+}
+
+.form__primary-data,
+.form__contact-data,
+.form__comment,
+.form__additional {
+  @include fieldset-edit;
 }
 
 @media (min-width: $tablet-width) {
