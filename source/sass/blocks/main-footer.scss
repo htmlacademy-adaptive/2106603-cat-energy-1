@@ -9,6 +9,9 @@
 
 .main-footer__wrapper {
   padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__logo-brand {
@@ -18,6 +21,9 @@
 
 .main-footer__copyright {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
 }
 
 @media (min-width: $tablet-width) {
