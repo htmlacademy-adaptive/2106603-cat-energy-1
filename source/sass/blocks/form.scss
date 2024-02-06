@@ -1,8 +1,11 @@
 .form__personal-list {
   @include list-reset;
+  @include grey-line-form;
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
+  padding-bottom: 22px;
 }
 
 .form__programs-list {
@@ -34,6 +37,7 @@
   flex-grow: 1;
   margin-left: 13px;
   height: 100%;
+  padding: 0 12px;
 }
 
 .form__textarea {
