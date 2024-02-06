@@ -7,3 +7,19 @@
 .copyright__link {
   text-decoration: none;
 }
+
+.copyright {
+  &:hover {
+    .copyright__link path {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__link path {
+      fill: $green;
+    }
+  }
+}
