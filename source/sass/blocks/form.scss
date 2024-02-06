@@ -1,5 +1,8 @@
 .form__personal-list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
 }
 
 .form__programs-list {
@@ -10,10 +13,27 @@
   @include list-reset;
 }
 
+.form__primary-data,
+.form__contact-data,
+.form__comment,
+.form__additional {
+  @include fieldset-edit;
+}
+
+.form__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+}
+
 .form__input {
   font: inherit;
   color: $dark-grey;
   text-transform: uppercase;
+  flex-grow: 1;
+  margin-left: 13px;
+  height: 100%;
 }
 
 .form__textarea {

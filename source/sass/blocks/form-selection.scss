@@ -20,13 +20,6 @@
   margin: 0 0 39px;
 }
 
-.form__primary-data,
-.form__contact-data,
-.form__comment,
-.form__additional {
-  @include fieldset-edit;
-}
-
 @media (min-width: $tablet-width) {
   .form-selection__wrapper {
     padding-top: 0;
