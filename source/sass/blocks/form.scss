@@ -112,10 +112,20 @@
   padding: 0 12px;
 }
 
+.form__comment {
+  .form__title {
+    margin-bottom: 37px;
+  }
+}
+
 .form__textarea {
   font: inherit;
   color: $dark-grey;
   text-transform: uppercase;
+  width: 100%;
+  padding: 14px;
+  height: 150px;
+  margin-bottom: 28px;
 }
 
 .form__footnote {
