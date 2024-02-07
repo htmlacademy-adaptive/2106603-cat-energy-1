@@ -76,7 +76,7 @@
 
 .form__legend {
   max-width: 165px;
-  color: #000000;
+  color: $black;
   font-size: 18px;
   line-height: 20px;
 }
@@ -170,6 +170,17 @@
 
   .form__legend {
     max-width: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 30px;
+      background-color: $green;
+      left: -70px;
+      top: 10px;
+    }
   }
 
   .form__add-list {
@@ -209,5 +220,12 @@
     width: 570px;
     height: 54px;
     padding: 14px 188px;
+  }
+
+  .form__legend {
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
   }
 }
