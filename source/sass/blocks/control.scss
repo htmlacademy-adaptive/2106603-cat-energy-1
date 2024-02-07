@@ -1,1 +1,26 @@
-//файл control.scss
+.control {
+  display: flex;
+  height: 26px;
+  align-items: center;
+  position: relative;
+}
+
+.control__label {
+  padding-left: 41px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px solid $special_grey;
+    top: 0;
+    left: 0;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__label {
+  &::before {
+    background: center no-repeat url("../../img/form/checkbox.svg");
+  }
+}

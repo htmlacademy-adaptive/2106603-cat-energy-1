@@ -8,10 +8,6 @@
   padding-bottom: 22px;
 }
 
-.form__add-list {
-  @include list-reset;
-}
-
 .form__primary-data,
 .form__contact-data,
 .form__comment,
@@ -126,6 +122,20 @@
   padding: 14px;
   height: 150px;
   margin-bottom: 28px;
+}
+
+.form__additional {
+  .form__title {
+    margin-bottom: 33px;
+  }
+}
+
+.form__add-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 33px;
 }
 
 .form__footnote {
