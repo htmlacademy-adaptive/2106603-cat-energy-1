@@ -8,10 +8,6 @@
   padding-bottom: 22px;
 }
 
-.form__programs-list {
-  @include list-reset;
-}
-
 .form__add-list {
   @include list-reset;
 }
@@ -28,6 +24,44 @@
   justify-content: space-between;
   align-items: center;
   height: 45px;
+}
+
+.form__programs-list {
+  @include list-reset;
+  @include grey-line-form;
+  position: relative;
+  padding: 22px 0 18px;
+  margin-bottom: 27px;
+
+  .form__label {
+    position: relative;
+    padding-left: 45px;
+    height: 30px;
+    padding-top: 6px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-color: $white;
+      border: 1px solid $special_grey;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 13px;
+      background-color: $green;
+      border-radius: 50%;
+      left: 8px;
+      top: 9px;
+    }
+  }
 }
 
 .form__input {
