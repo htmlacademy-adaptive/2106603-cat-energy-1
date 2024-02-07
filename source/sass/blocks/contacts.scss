@@ -1,3 +1,9 @@
+.contacts__container {
+  &--form {
+    background-color: $lightgrey;
+  }
+}
+
 .contacts__wrapper {
   padding-top: 26px;
   padding-bottom: 26px;
