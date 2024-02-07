@@ -91,6 +91,15 @@
   flex-direction: column;
   gap: 14px;
   margin-bottom: 22px;
+
+  .form__control {
+    position: relative;
+  }
+
+  .form__svg {
+    position: absolute;
+    right: 12px;
+  }
 }
 
 .form__input {
