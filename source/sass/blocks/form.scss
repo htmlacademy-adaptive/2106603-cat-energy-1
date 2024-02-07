@@ -1,11 +1,14 @@
 .form__personal-list {
   @include list-reset;
-  @include grey-line-form;
   position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
   padding-bottom: 22px;
+
+  @media (max-width: $tablet-width) {
+    @include grey-line-form;
+  }
 }
 
 .form__primary-data,
@@ -24,10 +27,13 @@
 
 .form__programs-list {
   @include list-reset;
-  @include grey-line-form;
   position: relative;
   padding: 22px 0 18px;
   margin-bottom: 27px;
+
+  @media (max-width: $tablet-width) {
+    @include grey-line-form;
+  }
 
   .form__label {
     position: relative;
