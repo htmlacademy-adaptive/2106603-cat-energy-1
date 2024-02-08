@@ -210,6 +210,20 @@
     padding: 14px 45px;
     margin: 0;
   }
+
+  .form__personal-list {
+    row-gap: 20px;
+    padding-bottom: 0;
+    margin-bottom: 73px;
+  }
+
+  .form__control {
+    height: 52px;
+  }
+
+  .form__input {
+    padding: 0 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {
