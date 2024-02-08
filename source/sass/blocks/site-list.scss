@@ -19,7 +19,11 @@
     width: 475px;
     font-size: 20px;
     line-height: normal;
-    color: $white;
+    color: $black;
+
+    &--color-white {
+      color: $white;
+    }
   }
 }
 
@@ -59,8 +63,12 @@
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $green;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $white;
+@media (min-width: $desktop-width) {
+  .site-list--color-white {
+    .site-list__item--current .site-list__link {
+      border-bottom: 2px solid $white;
+    }
   }
 }
