@@ -194,10 +194,12 @@
   }
 
   .form__add-list {
-    padding: 57px 50px 52px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
+    row-gap: 32px;
+    column-gap: 120px;
+    margin-bottom: 50px;
   }
 
   .form__wrap-button {
