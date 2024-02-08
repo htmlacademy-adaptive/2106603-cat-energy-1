@@ -295,6 +295,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__primary-data {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .form__personal-list,
+  .form__programs-list {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
   .form__add-list {
     flex-direction: row;
     justify-content: flex-start;
