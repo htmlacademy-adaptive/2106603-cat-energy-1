@@ -224,6 +224,39 @@
   .form__input {
     padding: 0 18px;
   }
+
+  .form__programs-list {
+    border: 1px solid $grey-form;
+    padding: 22px 26px 25px 26px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 65px;
+
+    .form__control {
+      height: 40px;
+    }
+
+    .form__label {
+      padding-left: 60px;
+      height: 40px;
+      padding-top: 0;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .form__input[type="radio"]:checked + .form__label {
+      &::after {
+        width: 18px;
+        height: 18px;
+        left: 11px;
+        top: 11px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
