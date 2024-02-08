@@ -24,3 +24,24 @@
     background: center no-repeat url("../../img/form/checkbox.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .control {
+    height: 40px;
+  }
+
+  .control__label {
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .control__input[type="checkbox"]:checked + .control__label {
+    &::before {
+      background-size: 26px 26px;
+    }
+  }
+}
