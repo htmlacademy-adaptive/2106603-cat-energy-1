@@ -205,7 +205,8 @@
   .form__wrap-button {
     display: flex;
     gap: 60px;
-    padding-left: 60px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .form__button {
@@ -213,6 +214,8 @@
     height: 54px;
     padding: 14px 45px;
     margin: 0;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .form__personal-list {
@@ -307,6 +310,11 @@
     width: 570px;
     height: 54px;
     padding: 14px 188px;
+  }
+
+  .form__footnote {
+    font-size: 16px;
+    padding-top: 19px;
   }
 
   .form__legend {
