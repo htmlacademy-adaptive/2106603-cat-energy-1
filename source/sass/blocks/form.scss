@@ -291,6 +291,7 @@
   .form__textarea {
     height: 175px;
     margin-bottom: 63px;
+    padding: 10px 20px;
   }
 }
 
@@ -314,6 +315,12 @@
 
   .form__control {
     flex-grow: 1;
+  }
+
+  .form__comment {
+    .form__title {
+      margin-bottom: 77px;
+    }
   }
 
   .form__add-list {
