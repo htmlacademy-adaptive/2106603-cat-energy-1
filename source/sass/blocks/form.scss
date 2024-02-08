@@ -258,6 +258,24 @@
       }
     }
   }
+
+  .form__contact-data {
+    .form__title {
+      margin-bottom: 75px;
+    }
+  }
+
+  .form__comment {
+    .form__title {
+      margin-bottom: 84px;
+    }
+  }
+
+  .form__additional {
+    .form__title {
+      margin-bottom: 54px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
