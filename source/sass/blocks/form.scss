@@ -115,6 +115,19 @@
   height: 100%;
   padding: 0 12px;
   border: 1px solid $grey-form;
+
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $dark-grey;
+  }
+
+  &--input-error {
+    border-color: #ff8282;
+  }
 }
 
 .form__comment {
@@ -293,6 +306,11 @@
     margin-bottom: 63px;
     padding: 10px 20px;
   }
+
+  .form__footnote {
+    font-size: 16px;
+    padding-top: 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -323,10 +341,17 @@
     }
   }
 
+  .form__additional {
+    .form__title {
+      margin-bottom: 60px;
+    }
+  }
+
   .form__add-list {
     flex-direction: row;
     justify-content: flex-start;
-    padding: 57px 0 60px;
+    gap: 80px;
+    margin-bottom: 55px;
   }
 
   .form__wrap-button {
@@ -338,11 +363,6 @@
     width: 570px;
     height: 54px;
     padding: 14px 188px;
-  }
-
-  .form__footnote {
-    font-size: 16px;
-    padding-top: 19px;
   }
 
   .form__legend {
