@@ -285,7 +285,7 @@
 
   .form__contact-imputs {
     gap: 20px;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
   }
 
   .form__textarea {
@@ -305,6 +305,15 @@
   .form__programs-list {
     flex-grow: 1;
     margin-bottom: 0;
+  }
+
+  .form__contact-imputs {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .form__control {
+    flex-grow: 1;
   }
 
   .form__add-list {
