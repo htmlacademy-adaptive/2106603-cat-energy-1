@@ -1,4 +1,9 @@
 .products {
+  @include line-after-header;
+  position: relative;
+}
+
+.products__wrapper {
   padding: 27px 0 35px;
 }
 

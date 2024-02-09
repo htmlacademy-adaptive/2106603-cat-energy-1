@@ -26,3 +26,15 @@
     left: -20px;
   }
 }
+
+@mixin line-after-header {
+  @media (max-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $line-grey;
+    }
+  }
+}
