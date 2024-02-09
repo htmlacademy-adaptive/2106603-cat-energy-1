@@ -8,6 +8,10 @@
   text-align: end;
 }
 
+.descript__property {
+  text-align: start;
+}
+
 @media (max-width: $tablet-width) {
   .descript {
     &--main {

@@ -1,6 +1,5 @@
 .add-catalog {
-  list-style: none;
-  margin: 0;
+  @include list-reset;
 }
 
 .add-catalog__link {
@@ -17,18 +16,21 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
 }
 
 .add-catalog__item {
-  padding: 12px 0 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 15px 0 19px;
+  border-bottom: 1px solid $special_grey;
+  border-top: 1px solid $special_grey;
 }
 
 .add-catalog__descript {
   margin: 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin-bottom: 15px;
 }
 
 /*.add-catalog__item:last-child {
