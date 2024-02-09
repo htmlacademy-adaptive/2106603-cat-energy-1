@@ -9,6 +9,27 @@
   grid-template-columns: 140px 140px;
   grid-template-rows: 1fr;
   row-gap: 17px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    &:first-of-type::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: $grey-catalog;
+      width: calc(100vw + 320px);
+      left: calc((100vw - 320px) * -1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: $grey-catalog;
+      width: calc(100vw + 320px);
+      left: calc((100vw - 320px) * -1);
+    }
+  }
 }
 
 .main-catalog__link {
