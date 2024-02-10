@@ -1,5 +1,5 @@
 .contacts__container {
-  &--form {
+  &--grey {
     background-color: $lightgrey;
   }
 }
@@ -41,10 +41,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__container {
-    background-color: $lightgrey;
-  }
-
   .contacts__wrapper {
     padding: 61px 38px;
   }
