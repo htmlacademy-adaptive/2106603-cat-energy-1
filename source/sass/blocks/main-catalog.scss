@@ -108,14 +108,16 @@
     position: relative;
     row-gap: 0;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 324px;
-      height: 430px;
-      bottom: 0;
-      background-color: $lightgrey;
-      z-index: -1;
+    &:not(:last-child) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 324px;
+        height: 430px;
+        bottom: 0;
+        background-color: $lightgrey;
+        z-index: -1;
+      }
     }
   }
 
@@ -155,8 +157,20 @@
     }
   }
 
-  .main-catalog__next {
+  .main-catalog__item--next {
+    height: 430px;
+    align-self: flex-end;
     padding: 50px 20px 40px 20px;
+  }
+
+  .main-catalog__next {
+    &::before,
+    &::after {
+      height: 2px;
+      width: 60px;
+      top: 30px;
+      right: 95px;
+    }
   }
 }
 
