@@ -17,6 +17,29 @@
   .add-products__title {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 40px 75px;
+    width: 340px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: calc(100vw - (100vw - 380px));
+      background-color: $green;
+      left: -420px;
+      top: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: calc(100vw - 380px);
+      background-color: $green;
+      left: 380px;
+      top: 20px;
+    }
   }
 
   .add-products__list {
