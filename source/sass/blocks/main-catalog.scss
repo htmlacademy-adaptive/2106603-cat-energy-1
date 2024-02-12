@@ -177,7 +177,32 @@
 @media (min-width: $desktop-width) {
   .main-catalog__item {
     width: 245px;
-    height: 430px;
+    height: 511px;
     padding: 0 38px 40px 38px;
+
+    &:not(:last-child) {
+      &::before {
+        width: 245px;
+      }
+    }
+  }
+
+  .main-catalog__link {
+    &--image {
+      width: 169px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .main-catalog__image {
+    &--small {
+      margin: 19px 3px;
+    }
+
+    &--big {
+      width: 172px;
+      height: 196px;
+      margin: 0;
+    }
   }
 }
