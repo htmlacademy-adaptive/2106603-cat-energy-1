@@ -105,11 +105,17 @@
 @media (min-width: $desktop-width) {
   .add-catalog__item {
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 40px;
   }
 
   .add-catalog__victory {
     width: 245px;
     height: 288px;
     margin: 0;
+  }
+
+  .add-catalog__title {
+    width: 330px;
   }
 }
