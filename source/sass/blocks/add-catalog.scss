@@ -113,9 +113,21 @@
     width: 245px;
     height: 288px;
     margin: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 60px 40px 40px;
   }
 
   .add-catalog__title {
     width: 330px;
+  }
+
+  .add-catalog__victory-img {
+    margin-bottom: 35px;
+  }
+
+  .add-catalog__victory-text {
+    text-align: center;
   }
 }
