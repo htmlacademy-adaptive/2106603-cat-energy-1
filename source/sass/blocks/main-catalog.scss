@@ -190,12 +190,19 @@
         width: 245px;
       }
     }
+
+    &--next {
+      height: 430px;
+      align-self: flex-end;
+      padding: 50px 20px 40px 20px;
+    }
   }
 
   .main-catalog__link {
     &--image {
       width: 169px;
       margin-bottom: 10px;
+      margin-top: 8px;
     }
   }
 
@@ -209,5 +216,17 @@
       height: 196px;
       margin: 0;
     }
+  }
+
+  .main-catalog__next {
+    &::before,
+    &::after {
+      right: 50px;
+    }
+  }
+
+  .main-catalog__title {
+    margin-bottom: 25px;
+    height: 49px;
   }
 }
