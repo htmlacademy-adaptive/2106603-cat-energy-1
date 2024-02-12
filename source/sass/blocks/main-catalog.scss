@@ -172,6 +172,11 @@
       right: 95px;
     }
   }
+
+  .main-catalog__descript dt,
+  .main-catalog__descript dd {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 @media (min-width: $desktop-width) {
