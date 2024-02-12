@@ -23,8 +23,11 @@
   flex-direction: column;
   gap: 13px;
   padding: 15px 0 19px;
-  border-bottom: 1px solid $special_grey;
   border-top: 1px solid $special_grey;
+
+  &:last-child {
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .add-catalog__descript {
