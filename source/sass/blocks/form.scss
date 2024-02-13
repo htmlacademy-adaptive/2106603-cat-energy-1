@@ -195,6 +195,17 @@ input[type="checkbox"]:disabled + .control__label {
 .form__button {
   margin-bottom: 20px;
   height: 40px;
+
+  &:hover {
+    background-color: $green-special;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $green-special;
+    cursor: pointer;
+  }
 }
 
 .form__add-item {
