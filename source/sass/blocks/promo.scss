@@ -29,7 +29,7 @@
 
 .promo__wrapper {
   margin-bottom: 20px;
-  padding-top: 65px;
+  padding-top: 30px;
 }
 
 .promo__title {
@@ -40,7 +40,6 @@
 
 .promo__slogan {
   margin-bottom: 30px;
-  margin-left: 90px;
   display: block;
 }
 
@@ -68,6 +67,11 @@
   .promo__wrapper {
     position: relative;
     margin-bottom: 0;
+    padding-top: 65px;
+  }
+
+  .promo__slogan {
+    margin-left: 90px;
   }
 
   .promo__link {
