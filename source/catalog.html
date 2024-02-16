@@ -11,7 +11,11 @@
     <div class="main-header__wrapper container">
       <div class="main-header__logo logo">
         <a class="logo__img">
-          <img src="img/logo.svg" width="33" height="38" alt="Логотип.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo.svg" alt="Логотип.">
+          </picture>
         </a>
         <a class="logo__brand">
           <img src="img/logo-header.svg" width="101" height="18" alt="Название бренда.">
