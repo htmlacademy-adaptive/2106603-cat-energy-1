@@ -5,13 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи, каталог</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!--16x16-->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page-body">
   <header class="main-header">
     <div class="main-header__wrapper container">
       <div class="main-header__logo logo">
         <a class="logo__img">
-          <img src="img/logo.svg" width="33" height="38" alt="Логотип.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo.svg" alt="Логотип.">
+          </picture>
         </a>
         <a class="logo__brand">
           <img src="img/logo-header.svg" width="101" height="18" alt="Название бренда.">
@@ -49,7 +57,10 @@
         <ul class="products__list main-catalog">
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link--image" href="#">
-              <img class="main-catalog__image main-catalog__image--small" src="img/catalog/chicken-500.png" width="68" height="86" alt="Cat Energy PRO 500 г">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/tab-chicken-500.png 1x, img/catalog/tablet/tab-chicken-500@2x.png 2x">
+                <img class="main-catalog__image main-catalog__image--small" src="img/catalog/mobile/chicken-500.png" srcset="img/catalog/mobile/chicken-500@2x.png 2x" width="68" height="86" alt="Cat Energy PRO 500 г">
+              </picture>
             </a>
             <div class="main-catalog__structure">
               <a class="main-catalog__link" href="#">
@@ -68,7 +79,10 @@
           </li>
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link--image" href="#">
-              <img class="main-catalog__image main-catalog__image--big" src="img/catalog/chicken-1000.png" width="84" height="100" alt="Cat Energy PRO 1000 г">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/tab-chicken-1000.png 1x, img/catalog/tablet/tab-chicken-1000@2x.png 2x">
+                <img class="main-catalog__image main-catalog__image--big" src="img/catalog/mobile/chicken-1000.png" width="84" height="100" alt="Cat Energy PRO 1000 г">
+              </picture>
             </a>
             <div class="main-catalog__structure">
               <a class="main-catalog__link" href="#">
@@ -87,7 +101,10 @@
           </li>
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link--image" href="#">
-              <img class="main-catalog__image main-catalog__image--small" src="img/catalog/fish-500.png" width="68" height="86" alt="Cat Energy PRO 500 г">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/tab-fish-500.png 1x, img/catalog/tablet/tab-fish-500@2x.png 2x">
+                <img class="main-catalog__image main-catalog__image--small" src="img/catalog/mobile/fish-500.png" width="68" height="86" alt="Cat Energy PRO 500 г">
+              </picture>
             </a>
             <div class="main-catalog__structure">
               <a class="main-catalog__link" href="#">
@@ -106,7 +123,10 @@
           </li>
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link--image" href="#">
-              <img class="main-catalog__image main-catalog__image--big" src="img/catalog/fish-1000.png" width="84" height="100" alt="Cat Energy PRO 1000 г">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/tab-fish-1000.png 1x, img/catalog/tablet/tab-fish-1000@2x.png 2x">
+                <img class="main-catalog__image main-catalog__image--big" src="img/catalog/mobile/fish-1000.png" width="84" height="100" alt="Cat Energy PRO 1000 г">
+              </picture>
             </a>
             <div class="main-catalog__structure">
               <a class="main-catalog__link" href="#">
@@ -125,7 +145,10 @@
           </li>
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link--image" href="#">
-              <img class="main-catalog__image main-catalog__image--small" src="img/catalog/buckwheat-500.png" width="68" height="86" alt="Cat Energy SLIM 500 г">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/tab-buckwheat-500.png 1x, img/catalog/tablet/tab-buckwheat-500@2x.png 2x">
+                <img class="main-catalog__image main-catalog__image--small" src="img/catalog/mobile/buckwheat-500.png" width="68" height="86" alt="Cat Energy SLIM 500 г">
+              </picture>
             </a>
             <div class="main-catalog__structure">
               <a class="main-catalog__link" href="#">
@@ -144,7 +167,10 @@
           </li>
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link--image" href="#">
-              <img class="main-catalog__image main-catalog__image--big" width="84" height="100" src="img/catalog/buckwheat-1000.png" alt="Cat Energy SLIM 1000 г">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/tab-buckwheat-1000.png 1x, img/catalog/tablet/tab-buckwheat-1000@2x.png 2x">
+                <img class="main-catalog__image main-catalog__image--big" width="84" height="100" src="img/catalog/mobile/buckwheat-1000.png" alt="Cat Energy SLIM 1000 г">
+              </picture>
             </a>
             <div class="main-catalog__structure">
               <a class="main-catalog__link" href="#">
@@ -163,7 +189,10 @@
           </li>
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link--image" href="#">
-              <img class="main-catalog__image main-catalog__image--small" width="68" height="86" src="img/catalog/rice-500.png" alt="Cat Energy slim 500 г">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog/tablet/tab-rice-500.png 1x, img/catalog/tablet/tab-rice-500@2x.png 2x">
+                <img class="main-catalog__image main-catalog__image--small" width="68" height="86" src="img/catalog/mobile/rice-500.png" alt="Cat Energy slim 500 г">
+              </picture>
             </a>
             <div class="main-catalog__structure">
               <a class="main-catalog__link" href="#">

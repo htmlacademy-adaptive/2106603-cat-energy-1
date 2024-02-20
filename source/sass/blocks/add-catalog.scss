@@ -56,6 +56,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog@2x.jpg");
+    background-size: 280px 290px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/tablet/cat-catalog-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/tablet/cat-catalog-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog.png");
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog@2x.jpg");
+      background-size: 245px auto;
+    }
+  }
 }
 
 .add-catalog__victory-img {
