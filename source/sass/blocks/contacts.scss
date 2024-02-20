@@ -1,3 +1,9 @@
+.contacts__container {
+  &--grey {
+    background-color: $lightgrey;
+  }
+}
+
 .contacts__wrapper {
   padding-top: 26px;
   padding-bottom: 26px;
@@ -23,17 +29,20 @@
 }
 
 .contacts__map {
-  width: 320px;
+  min-width: 320px;
   margin: 0 -20px;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__container {
-    background-color: $lightgrey;
-  }
+.contacts iframe {
+  border: none;
+  display: block;
+  width: 320px;
+  height: 362px;
+}
 
+@media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding: 61px 50px;
+    padding: 61px 38px;
   }
 
   .contacts__invite {
@@ -49,6 +58,10 @@
   }
 
   .contacts__map {
+    margin: 0 -30px;
+  }
+
+  .contacts iframe {
     width: 768px;
     height: 400px;
   }
@@ -73,5 +86,10 @@
   .contacts__map {
     width: 1440px;
     margin: 0 -110px;
+  }
+
+  .contacts iframe {
+    width: 100%;
+    height: 400px;
   }
 }

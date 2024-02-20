@@ -13,20 +13,39 @@
   color: $dark-grey;
   height: 40px;
   padding: 10px 0;
+
+  &:hover,
+  &:active {
+    background-color: $grey-catalog;
+    cursor: pointer;
+  }
 }
 
 .button--catalog {
+  @include status-green-button;
   height: 40px;
   padding: 10px 0;
+}
+
+.button--add {
+  @include status-green-button;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .button--catalog {
     width: 250px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .button--differing {
     width: 250px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .button--add {

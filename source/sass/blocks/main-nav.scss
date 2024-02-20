@@ -1,3 +1,114 @@
+.main-nav {
+  position: relative;
+  width: auto;
+}
+
+.main-nav__list {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    background-color: $white;
+    width: 320px;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: -48px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  z-index: 2;
+  border: none;
+  padding: 0;
+  background-color: $white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow:
+    0 8px 0 0 $black,
+    0 16px 0 0 $black;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  box-shadow:
+    0 8px 0 0 fade($black, 80%),
+    0 16px 0 0 fade($black, 80%);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  box-shadow:
+    0 8px 0 0 fade($black, 60%),
+    0 16px 0 0 fade($black, 60%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 1px;
+    width: 25px;
+    height: 1.5px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.8;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__list {
+      position: static;
+      min-height: 0;
+    }
+
+    .site-list__item {
+      display: block;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;

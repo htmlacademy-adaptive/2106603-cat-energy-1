@@ -1,6 +1,5 @@
 .add-catalog {
-  list-style: none;
-  margin: 0;
+  @include list-reset;
 }
 
 .add-catalog__link {
@@ -17,18 +16,24 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
 }
 
 .add-catalog__item {
-  padding: 12px 0 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 15px 0 19px;
+  border-top: 1px solid $special_grey;
+
+  &:last-child {
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .add-catalog__descript {
   margin: 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin-bottom: 15px;
 }
 
 /*.add-catalog__item:last-child {
@@ -38,8 +43,6 @@
 }*/
 
 .add-catalog__victory {
-  position: relative;
-  padding-top: 175px;
   color: $white;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -48,16 +51,25 @@
   background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog.png");
   background-repeat: no-repeat;
   height: 290px;
+  margin: 0;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.add-catalog__victory::before {
-  position: absolute;
-  content: "";
+.add-catalog__victory-img {
+  display: block;
   width: 78px;
   height: 80px;
   background: url("../../img/catalog/icon_gift.svg"), no-repeat;
-  top: 45px;
-  right: 45px;
+  margin-top: 60px;
+}
+
+.add-catalog__victory-text {
+  display: block;
+  width: 161px;
+  margin-top: 48px;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,21 +81,54 @@
   .add-catalog__item {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: 23px 0 26px;
   }
 
   .add-catalog__victory {
     margin: 70px 0 75px;
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-between;
+    padding: 0 120px 0 75px;
+  }
+
+  .add-catalog__victory-img {
+    margin-top: 0;
+  }
+
+  .add-catalog__victory-text {
+    margin-top: 0;
+    text-align: start;
   }
 }
 
 @media (min-width: $desktop-width) {
   .add-catalog__item {
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 0;
   }
 
   .add-catalog__victory {
     width: 245px;
     height: 288px;
     margin: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 60px 40px 40px;
+  }
+
+  .add-catalog__title {
+    width: 330px;
+  }
+
+  .add-catalog__victory-img {
+    margin-bottom: 35px;
+  }
+
+  .add-catalog__victory-text {
+    text-align: center;
   }
 }

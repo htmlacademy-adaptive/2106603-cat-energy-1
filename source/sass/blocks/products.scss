@@ -1,16 +1,27 @@
 .products {
-  padding: 27px 0 35px;
+  @include line-after-header;
+  position: relative;
 }
 
 .products__title {
+  padding-top: 27px;
   margin-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
+  .products__wrapper {
+    margin-bottom: 70px;
+  }
+
   .products__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+  }
+
+  .products__title {
+    padding-top: 65px;
+    margin-bottom: 80px;
   }
 }
 

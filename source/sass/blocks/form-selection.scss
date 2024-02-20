@@ -1,4 +1,6 @@
 .form-selection {
+  @include line-after-header;
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -12,6 +14,8 @@
 
 .form-selection__title {
   margin-bottom: 37px;
+  line-height: 36px;
+  text-transform: none;
 }
 
 .form-selection__manual {
@@ -21,13 +25,32 @@
 
 @media (min-width: $tablet-width) {
   .form-selection__wrapper {
-    padding-top: 0;
-    padding-bottom: 60px;
+    margin-top: 65px;
+    padding: 0 70px 60px;
+  }
+
+  .form-selection__title {
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-selection__manual {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin-bottom: 65px;
+    color: $black;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-selection__wrapper {
-    padding-bottom: 79px;
+    margin-top: 70px;
+    padding: 0 110px 79px;
+  }
+
+  .form-selection__title {
+    margin-bottom: 55px;
   }
 }
