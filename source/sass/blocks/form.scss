@@ -135,10 +135,18 @@
   &:focus {
     outline: none;
     border-color: $dark-grey;
+
+    ~ .form__svg path {
+      stroke: $green;
+    }
   }
 
   &--input-error {
     border-color: #ff8282;
+
+    ~ .form__svg path {
+      stroke: #ff8282;
+    }
   }
 }
 
