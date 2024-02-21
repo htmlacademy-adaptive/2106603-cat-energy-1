@@ -13,16 +13,16 @@
   margin: 0 auto;
 }
 
-.social__icon {
-  fill: #666666;
+.social__link {
+  color: $footer_ligh-grey;
 
-  .social__link:hover & {
-    fill: $green;
+  &:hover {
+    color: $green;
   }
 
-  .social__link:active & {
+  &:active {
     opacity: 0.3;
-    fill: $green;
+    color: $green;
   }
 }
 

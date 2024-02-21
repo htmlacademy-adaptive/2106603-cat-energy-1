@@ -17,13 +17,14 @@
 .main-footer__logo-brand {
   margin-bottom: 20px;
   display: block;
+  color: #111111;
 
-  &:hover path {
-    fill: #3e3e3e;
+  &:hover {
+    color: #3e3e3e;
   }
 
-  &:active path {
-    fill: #6b6b6b;
+  &:active {
+    color: #6b6b6b;
   }
 }
 

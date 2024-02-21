@@ -6,20 +6,21 @@
 
 .copyright__link {
   text-decoration: none;
+  color: $footer_ligh-grey;
 }
 
 .copyright {
   &:hover {
-    .copyright__link path {
-      fill: $green;
+    .copyright__link {
+      color: $green;
     }
   }
 
   &:active {
     opacity: 0.3;
 
-    .copyright__link path {
-      fill: $green;
+    .copyright__link {
+      color: $green;
     }
   }
 }
