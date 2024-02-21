@@ -13,14 +13,16 @@
   margin: 0 auto;
 }
 
-.social__link {
-  &:hover path {
+.social__icon {
+  fill: #666666;
+
+  .social__link:hover & {
     fill: $green;
   }
 
-  &:active path {
-    fill: $green;
+  .social__link:active & {
     opacity: 0.3;
+    fill: $green;
   }
 }
 
