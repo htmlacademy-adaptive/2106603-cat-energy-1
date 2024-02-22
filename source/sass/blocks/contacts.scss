@@ -49,6 +49,7 @@
   .contacts__invite {
     font-size: 20px;
     line-height: 26px;
+    width: 165px;
   }
 
   .contacts__address {
@@ -56,6 +57,9 @@
     width: 157px;
     height: 80px;
     text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .contacts__map {
