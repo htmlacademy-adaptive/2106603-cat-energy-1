@@ -142,15 +142,17 @@
   .example {
     padding-top: 0;
     padding-bottom: 70px;
+    border: none;
   }
 
   .example__title {
-    margin-bottom: 75px;
+    margin: 0;
   }
 
   .example__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: -60px;
   }
 
   .example__info {
@@ -161,6 +163,8 @@
 
   .example__description {
     margin-bottom: 69px;
+    margin-top: 146px;
+    width: 436px;
   }
 
   .example__statistics {
