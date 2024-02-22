@@ -88,6 +88,7 @@
   .weight__title {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 5px;
   }
 
   .weight__description {
@@ -97,11 +98,28 @@
     color: $black;
     font-size: 16px;
     line-height: 24px;
+    margin-top: -10px;
   }
 
   .weight__img--cat-goes {
-    margin-left: 0;
-    margin-right: -10px;
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+
+  .weight__link {
+    margin-top: 10px;
+
+    &::after {
+      top: 16px;
+      left: 132px;
+    }
+  }
+
+  .weight__arrow {
+    &::after {
+      right: 10px;
+      top: 20px;
+    }
   }
 }
 
