@@ -126,14 +126,30 @@
 @media (min-width: $desktop-width) {
   .weight__title {
     align-self: center;
+    margin-top: 0;
   }
 
   .weight__description {
     width: 457px;
+    margin-top: 20px;
   }
 
   .weight__arrow {
     align-self: flex-end;
+
+    &::after {
+      right: 6px;
+      top: 11px;
+    }
+  }
+
+  .weight__link {
+    margin-top: 0;
+
+    &::after {
+      top: 16px;
+      left: 135px;
+    }
   }
 
   .weight__img {
@@ -143,6 +159,7 @@
 
   .weight__img--cat-goes {
     margin-left: -19px;
+    margin-top: 5px;
     width: 134px;
     height: 100px;
   }
