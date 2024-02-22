@@ -14,11 +14,12 @@
   padding: 20px;
   padding-bottom: 0;
   display: grid;
-  gap: 13px;
+  row-gap: 13px;
   grid-template-areas:
-    "img title"
-    "descript descript"
-    "link link";
+    "img title title"
+    "descript descript descript"
+    "link link link";
+  grid-template-columns: 70px 1fr 1fr;
 }
 
 @media (min-width: $tablet-width) {

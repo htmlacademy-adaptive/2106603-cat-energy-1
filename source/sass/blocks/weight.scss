@@ -1,6 +1,7 @@
 .weight__title {
   margin: 0;
   grid-area: title;
+  margin-top: 10px;
 }
 
 .weight__img {
@@ -9,6 +10,7 @@
 
 .weight__img--cat-goes {
   margin-left: -7px;
+  margin-top: 4px;
 }
 
 .weight__description {
@@ -32,7 +34,7 @@
     height: 2px;
     background-color: $black;
     top: 18px;
-    left: 128px;
+    left: 102px;
   }
 }
 
@@ -55,7 +57,7 @@
     border-top-color: transparent;
     border-bottom-color: transparent;
     border-right-style: none;
-    right: 13px;
+    right: 40px;
     top: 13px;
   }
 
