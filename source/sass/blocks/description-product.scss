@@ -9,7 +9,7 @@
 .description-product__list {
   @include list-reset;
   display: grid;
-  gap: 26px;
+  gap: 20px;
 }
 
 .description-product__item {
@@ -43,7 +43,7 @@
 
 .description-product__text {
   margin: 0;
-  margin-left: 78px;
+  margin-left: 80px;
   min-width: 200px;
   min-height: 54px;
 }
