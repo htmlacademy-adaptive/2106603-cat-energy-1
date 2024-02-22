@@ -97,13 +97,13 @@
     line-height: 37px;
     width: 162px;
     height: 77px;
-    padding-top: 20px;
+    padding-top: 15px;
   }
 
   .example__text {
     font-size: 14px;
     line-height: 14px;
-    top: 70px;
+    top: 65px;
     background-color: $white;
     padding: 0 5px;
 
@@ -121,6 +121,9 @@
   .example__expenses {
     font-size: 20px;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .example__slide {
@@ -194,7 +197,7 @@
     grid-template-areas:
       "description description description"
       "statistics statistics expenses";
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
   .example__description {
