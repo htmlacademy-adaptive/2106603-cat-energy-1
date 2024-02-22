@@ -61,11 +61,27 @@
 
   .description-product__list {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 154px;
+    gap: 50px 55px;
   }
 
   .description-product__item {
-    width: 230px;
+    max-width: 250px;
+
+    &--benefit::before {
+      background: url("../../img/main-page/technology-benefit-tab.png") no-repeat;
+    }
+
+    &--comfort::before {
+      background: url("../../img/main-page/technology-comfort-tab.png") no-repeat;
+    }
+
+    &--guide::before {
+      background: url("../../img/main-page/technology-change-tab.png") no-repeat;
+    }
+
+    &--result::before {
+      background: url("../../img/main-page/technology-period-tab.png") no-repeat;
+    }
 
     &--benefit::after {
       content: "1";
