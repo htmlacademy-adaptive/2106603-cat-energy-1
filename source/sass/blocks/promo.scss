@@ -4,7 +4,7 @@
   font-weight: 400;
   text-align: center;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/index-background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: 320px 302px;
@@ -80,6 +80,7 @@
 
   .promo__slogan {
     margin-left: 90px;
+    margin-bottom: 20px;
   }
 
   .promo__link {
