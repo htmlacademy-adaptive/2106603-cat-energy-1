@@ -28,8 +28,8 @@
 .form__programs-list {
   @include list-reset;
   position: relative;
-  padding: 22px 0 18px;
-  margin-bottom: 27px;
+  padding: 15px 0 10px;
+  margin-bottom: 23px;
 
   @media (max-width: $tablet-width) {
     @include grey-line-form;
@@ -87,8 +87,7 @@
   background-color: $white;
   padding-right: 20px;
   position: relative;
-  margin-left: -20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   &::before {
     position: absolute;
@@ -105,8 +104,8 @@
 .form__contact-imputs {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-bottom: 22px;
+  gap: 12px;
+  margin-bottom: 20px;
 
   .form__control {
     position: relative;
@@ -152,7 +151,7 @@
 
 .form__comment {
   .form__title {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
   }
 }
 
@@ -163,13 +162,13 @@
   width: 100%;
   padding: 14px;
   height: 150px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   border: 1px solid $grey-form;
 }
 
 .form__additional {
   .form__title {
-    margin-bottom: 33px;
+    margin-bottom: 38px;
   }
 }
 
@@ -177,7 +176,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 17px;
   margin-bottom: 33px;
 }
 
@@ -204,6 +203,8 @@ input[type="checkbox"]:disabled + .control__label {
   @include status-green-button;
   margin-bottom: 20px;
   height: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__add-item {
