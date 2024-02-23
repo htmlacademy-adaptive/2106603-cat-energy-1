@@ -36,12 +36,6 @@
   grid-template-columns: 2fr 1fr;
 }
 
-/*.add-catalog__item:last-child {
-  background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog.png");
-  background-repeat: no-repeat;
-  height: 290px;
-}*/
-
 .add-catalog__victory {
   color: $white;
   text-align: center;
@@ -86,7 +80,7 @@
   width: 78px;
   height: 80px;
   background: url("../../img/catalog/icon_gift.svg"), no-repeat;
-  margin-top: 60px;
+  margin-top: 58px;
 }
 
 .add-catalog__victory-text {
