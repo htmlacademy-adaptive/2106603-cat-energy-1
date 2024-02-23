@@ -131,10 +131,10 @@
 
   .description-product__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 95px;
+    gap: 75px;
   }
 
   .description-product__item {
-    width: 230px;
+    align-self: start;
   }
 }
