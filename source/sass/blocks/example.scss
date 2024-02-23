@@ -142,8 +142,12 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-top: 0;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     border: none;
+  }
+
+  .example__packing {
+    padding-top: 20px;
   }
 
   .example__title {
@@ -163,15 +167,19 @@
   }
 
   .example__description {
-    margin-bottom: 69px;
-    margin-top: 146px;
-    width: 436px;
+    margin-bottom: 70px;
+    margin-top: 130px;
+    width: 433px;
   }
 
   .example__statistics {
     margin-bottom: 55px;
     justify-content: flex-start;
     gap: 40px;
+  }
+
+  .example__quantity {
+    padding-top: 20px;
   }
 
   .example__text {
