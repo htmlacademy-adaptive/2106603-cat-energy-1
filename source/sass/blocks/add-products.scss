@@ -50,11 +50,15 @@
   .add-products__pack {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 88px;
   }
 
   .add-products__list {
     width: 895px;
     padding: 0;
+  }
+
+  .add-products__title {
+    margin-left: -40px;
   }
 }

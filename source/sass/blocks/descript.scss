@@ -35,3 +35,12 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .descript--add {
+    .descript__property {
+      text-align: start;
+      padding-right: 0;
+    }
+  }
+}

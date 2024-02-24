@@ -28,6 +28,12 @@
 @media (min-width: $desktop-width) {
   .products__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+
+  .products__title {
+    padding-top: 74px;
+    margin-bottom: 88px;
   }
 }

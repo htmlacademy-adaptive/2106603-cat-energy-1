@@ -66,10 +66,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog.png");
+    background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog-desktop.png");
 
     @media (min-resolution: 2dppx) {
-      background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog@2x.jpg");
+      background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog-desktop@2x.jpg");
       background-size: 245px auto;
     }
   }
@@ -129,10 +129,12 @@
 
 @media (min-width: $desktop-width) {
   .add-catalog__item {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 290px 280px 1fr;
     align-items: center;
     gap: 40px;
     padding: 15px 0;
+    border: none;
+    border-top: 1px solid $special_grey;
   }
 
   .add-catalog__victory {
@@ -142,15 +144,19 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding: 60px 40px 40px;
+    padding: 55px 40px 40px;
   }
 
   .add-catalog__title {
     width: 330px;
   }
 
+  .add-catalog__descript {
+    grid-template-columns: 2fr 1fr;
+  }
+
   .add-catalog__victory-img {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 
   .add-catalog__victory-text {

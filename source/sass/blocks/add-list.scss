@@ -42,3 +42,13 @@
     margin: 0 auto 84px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .add-list__portion {
+    margin: 93px auto 25px;
+  }
+
+  .add-list__slogan {
+    margin-bottom: 89px;
+  }
+}
