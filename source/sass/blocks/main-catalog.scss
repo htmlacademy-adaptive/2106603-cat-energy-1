@@ -96,6 +96,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     text-align: center;
+    height: 48px;
   }
 
   .main-catalog__item {
@@ -137,11 +138,11 @@
 
   .main-catalog__structure {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .main-catalog__descript {
-    row-gap: 8px;
+    row-gap: 6px;
   }
 
   .main-catalog__item:last-child {
@@ -153,7 +154,7 @@
     &--image {
       height: 210px;
       width: 200px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
 
@@ -176,6 +177,7 @@
   .main-catalog__descript dt,
   .main-catalog__descript dd {
     border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 5px;
   }
 }
 

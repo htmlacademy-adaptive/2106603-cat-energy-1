@@ -97,8 +97,11 @@
 
   .add-catalog__item {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 23px 0 26px;
+    grid-template-columns: 1fr 225px;
+    padding: 26px 38px 28px;
+    border: 1px solid $special_grey;
+    border-bottom: none;
+    row-gap: 24px;
   }
 
   .add-catalog__victory {
@@ -116,6 +119,11 @@
   .add-catalog__victory-text {
     margin-top: 0;
     text-align: start;
+    width: 165px;
+  }
+
+  .add-catalog__descript {
+    grid-template-columns: 3fr 1fr;
   }
 }
 
