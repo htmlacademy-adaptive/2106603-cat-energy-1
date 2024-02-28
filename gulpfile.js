@@ -3,6 +3,7 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso/index.js';
+import htmlmin from 'gulp-htmlmin';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
@@ -22,12 +23,18 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+export const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
+
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -45,5 +52,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, server, watcher
 );
