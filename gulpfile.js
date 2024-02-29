@@ -35,7 +35,7 @@ export const html = () => {
 
 //Scripts
 
-export const script = () => {
+const script = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(rename("script.min.js"))
@@ -44,9 +44,14 @@ export const script = () => {
 
 //Images
 
-export const images = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
+}
+
+export const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
 }
 
