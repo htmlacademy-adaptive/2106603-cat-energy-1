@@ -27,7 +27,7 @@ export const styles = () => {
 
 //HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
@@ -50,8 +50,18 @@ const optimizeImages = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(gulp.dest('build/img'));
+}
+
+//WebP
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(squoosh({
+      webp: {}
+    }))
     .pipe(gulp.dest('build/img'));
 }
 
