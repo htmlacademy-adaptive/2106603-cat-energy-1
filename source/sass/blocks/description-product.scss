@@ -9,7 +9,7 @@
 .description-product__list {
   @include list-reset;
   display: grid;
-  gap: 26px;
+  gap: 20px;
 }
 
 .description-product__item {
@@ -43,14 +43,14 @@
 
 .description-product__text {
   margin: 0;
-  margin-left: 78px;
+  margin-left: 80px;
   min-width: 200px;
   min-height: 54px;
 }
 
 @media (min-width: $tablet-width) {
   .description-product__wrapper {
-    margin-bottom: 47px;
+    margin-bottom: 65px;
   }
 
   .description-product__title {
@@ -61,11 +61,27 @@
 
   .description-product__list {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 154px;
+    gap: 50px 55px;
   }
 
   .description-product__item {
-    width: 230px;
+    max-width: 250px;
+
+    &--benefit::before {
+      background: url("../../img/main-page/technology-benefit-tab.png") no-repeat;
+    }
+
+    &--comfort::before {
+      background: url("../../img/main-page/technology-comfort-tab.png") no-repeat;
+    }
+
+    &--guide::before {
+      background: url("../../img/main-page/technology-change-tab.png") no-repeat;
+    }
+
+    &--result::before {
+      background: url("../../img/main-page/technology-period-tab.png") no-repeat;
+    }
 
     &--benefit::after {
       content: "1";
@@ -115,10 +131,10 @@
 
   .description-product__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 95px;
+    gap: 75px;
   }
 
   .description-product__item {
-    width: 230px;
+    align-self: start;
   }
 }

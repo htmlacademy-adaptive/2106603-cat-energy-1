@@ -1,5 +1,5 @@
 .social {
-  padding: 20px 0;
+  padding: 20px 0 15px;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
   min-width: 320px;
@@ -14,18 +14,21 @@
 }
 
 .social__link {
-  &:hover path {
-    fill: $green;
+  color: $footer_ligh-grey;
+
+  &:hover {
+    color: $green;
   }
 
-  &:active path {
-    fill: $green;
+  &:active {
     opacity: 0.3;
+    color: $green;
   }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+    padding-left: 30px;
   }
 }

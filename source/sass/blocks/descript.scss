@@ -12,7 +12,7 @@
   text-align: start;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-max) {
   .descript {
     &--main {
       font-size: 12px;
@@ -28,8 +28,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .descript__meaning,
-  .descript__property {
-    padding-bottom: 5px;
+  .descript--add {
+    .descript__property {
+      text-align: end;
+      padding-right: 35px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .descript--add {
+    .descript__property {
+      text-align: start;
+      padding-right: 0;
+    }
   }
 }

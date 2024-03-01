@@ -21,6 +21,7 @@
 .form-selection__manual {
   font-size: 14px;
   margin: 0 0 39px;
+  width: 225px;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,6 +52,6 @@
   }
 
   .form-selection__title {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 }

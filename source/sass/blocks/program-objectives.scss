@@ -5,7 +5,7 @@
 .program-objectives__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .program-objectives__item {
@@ -14,11 +14,12 @@
   padding: 20px;
   padding-bottom: 0;
   display: grid;
-  gap: 13px;
+  row-gap: 13px;
   grid-template-areas:
-    "img title"
-    "descript descript"
-    "link link";
+    "img title title"
+    "descript descript descript"
+    "link link link";
+  grid-template-columns: 70px 1fr 1fr;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,6 +36,7 @@
       "title title img"
       "descript descript img"
       "link link img";
+    grid-template-columns: 1fr 1fr 240px;
   }
 }
 
@@ -52,7 +54,7 @@
   .program-objectives__item {
     width: 570px;
     height: 374px;
-    column-gap: 60px;
+    column-gap: 30px;
     padding: 40px 50px 54px;
     grid-template-columns: 134px 1fr;
     grid-template-areas:

@@ -5,12 +5,12 @@
 
 .products__title {
   padding-top: 27px;
-  margin-bottom: 41px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .products__wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   .products__list {
@@ -28,6 +28,12 @@
 @media (min-width: $desktop-width) {
   .products__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+
+  .products__title {
+    padding-top: 74px;
+    margin-bottom: 88px;
   }
 }
