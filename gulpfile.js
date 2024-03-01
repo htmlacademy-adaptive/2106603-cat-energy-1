@@ -7,6 +7,8 @@ import htmlmin from 'gulp-htmlmin';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore/index.js';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -62,6 +64,24 @@ export const createWebp = () => {
     .pipe(squoosh({
       webp: {}
     }))
+    .pipe(gulp.dest('build/img'));
+}
+
+//SVG
+
+export const svg = () => {
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+}
+
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
 
