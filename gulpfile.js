@@ -85,6 +85,20 @@ export const sprite = () => {
     .pipe(gulp.dest('build/img'));
 }
 
+//Copy
+
+const copy = (done) => {
+  gulp.src([
+    'source/fonts/**/*.{woof2,woff}',
+    'source/*.ico',
+    'source/manifest.webmanifest.json'
+  ], {
+    base: 'source'
+  })
+  .pipe(gulp.dest('build'))
+  done();
+}
+
 // Server
 
 const server = (done) => {
