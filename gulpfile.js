@@ -15,7 +15,7 @@ import browser from 'browser-sync';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -127,6 +127,22 @@ const watcher = () => {
   gulp.watch('source/js/*.js', gulp.series(script));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
+
+//Build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    script,
+    svg,
+    sprite,
+    createWebp
+  ),
+);
 
 
 export default gulp.series(
