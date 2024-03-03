@@ -8,7 +8,7 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore/index.js';
+import svgstore from 'gulp-svgstore';
 import del from 'del';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
@@ -78,10 +78,7 @@ const svg = () => {
 
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
+    .pipe(svgstore())
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
