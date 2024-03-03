@@ -60,7 +60,7 @@ const copyImages = () => {
 
 //WebP
 
-export const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
@@ -70,13 +70,13 @@ export const createWebp = () => {
 
 //SVG
 
-export const svg = () => {
+const svg = () => {
   return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -102,7 +102,7 @@ const copy = (done) => {
 
 //Clean
 
-export const clean = () => {
+const clean = () => {
   return del('build');
 }
 
@@ -124,6 +124,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/*.js', gulp.series(script));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
