@@ -79,7 +79,7 @@ const svg = () => {
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgstore())
+    .pipe(svgstore({inlineSvg: true}))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
@@ -142,7 +142,22 @@ export const build = gulp.series(
   ),
 );
 
+// Default
 
 export default gulp.series(
-  html, styles, server, watcher
-);
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    script,
+    svg,
+    sprite,
+    createWebp
+    ),
+    gulp.series(
+      server,
+      watcher
+    )
+  );
