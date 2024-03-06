@@ -16,7 +16,7 @@
   .products__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 54px;
   }
 
   .products__title {
@@ -29,7 +29,7 @@
   .products__list {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 60px;
   }
 
   .products__title {
