@@ -79,7 +79,9 @@ const svg = () => {
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({inlineSvg: true}))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 }
@@ -118,12 +120,17 @@ const server = (done) => {
   done();
 }
 
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(script));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 //Build
