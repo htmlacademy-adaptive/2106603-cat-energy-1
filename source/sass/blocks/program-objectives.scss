@@ -5,7 +5,7 @@
 .program-objectives__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .program-objectives__item {
@@ -23,6 +23,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program-objectives__wrapper {
+    gap: 30px;
+  }
+
   .program-objectives {
     margin: 0;
     margin-bottom: 50px;
