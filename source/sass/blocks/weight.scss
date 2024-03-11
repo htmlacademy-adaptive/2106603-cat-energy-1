@@ -246,11 +246,15 @@
 
   .weight__description {
     width: 457px;
-    margin-top: 20px;
+    margin-top: 13px;
   }
 
   .weight__arrow {
     align-self: flex-end;
+  }
+
+  .weight__arrow--slim {
+    padding-bottom: 5px;
   }
 
   .weight__link {
