@@ -110,6 +110,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    min-width: 440px;
+  }
+
   .main-nav__toggle {
     display: none;
   }
