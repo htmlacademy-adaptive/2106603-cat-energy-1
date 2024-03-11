@@ -145,6 +145,14 @@
     padding-top: 0;
     padding-bottom: 80px;
     border: none;
+
+    &::after {
+      height: 470px;
+    }
+  }
+
+  .example__item {
+    height: 74px;
   }
 
   .example__packing {
@@ -169,18 +177,14 @@
 
   .example__description {
     margin-bottom: 70px;
-    margin-top: 130px;
+    margin-top: 133px;
     width: 433px;
   }
 
   .example__statistics {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     justify-content: flex-start;
     gap: 40px;
-  }
-
-  .example__quantity {
-    padding-top: 20px;
   }
 
   .example__text {
@@ -189,6 +193,7 @@
 
   .example__expenses {
     padding: 0;
+    padding-top: 5px;
     margin: 0;
     flex-direction: row;
 
