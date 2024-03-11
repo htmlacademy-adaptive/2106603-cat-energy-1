@@ -49,8 +49,8 @@
   padding: 11px 0;
 
   &::before {
-    right: 28px;
     top: 13px;
+    right: 28px;
   }
 
   &::after {
@@ -90,8 +90,8 @@
   }
 
   &::after {
+    top: 7px;
     right: 35px;
-    top: 8px;
   }
 
   &:hover {
@@ -137,6 +137,11 @@
     margin-top: 5px;
   }
 
+  .weight__img {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
   .weight__description {
     border: none;
     padding-bottom: 0;
@@ -148,8 +153,8 @@
   }
 
   .weight__img--cat-goes {
-    margin-top: 20px;
-    margin-left: -20px;
+    margin-top: 15px;
+    margin-left: -25px;
   }
 
   .weight__link {
@@ -157,6 +162,8 @@
   }
 
   .weight__link--slim {
+    padding: 8px 0;
+
     &::before {
       right: 0;
       top: 11px;
@@ -193,16 +200,16 @@
   }
 
   .weight__link--pro {
-    padding-top: 10px;
+    padding-top: 5px;
 
     &::before {
-      top: 11px;
+      top: 7px;
       left: 145px;
     }
 
     &::after {
       right: 9px;
-      top: 16px;
+      top: 12px;
     }
 
     &:hover {
