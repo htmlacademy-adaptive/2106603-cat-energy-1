@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 1fr;
-  row-gap: 20px;
+  row-gap: 21px;
   position: relative;
 
   @media (max-width: $mobile-width-max) {
