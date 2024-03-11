@@ -59,7 +59,7 @@
     text-align: end;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
   .contacts__map {
@@ -101,5 +101,6 @@
   .contacts__address {
     text-align: start;
     width: 160px;
+    margin-top: -4px;
   }
 }
