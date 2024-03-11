@@ -10,7 +10,6 @@
 
 .weight__img--cat-goes {
   margin-left: -7px;
-  margin-top: 4px;
 }
 
 .weight__description {
@@ -125,6 +124,10 @@
   align-self: center;
   width: 165px;
   padding-right: 11px;
+}
+
+.weight__arrow--pro {
+  height: 35px;
 }
 
 @media (min-width: $tablet-width) {
