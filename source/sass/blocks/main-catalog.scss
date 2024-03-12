@@ -203,7 +203,7 @@
   .main-catalog__link {
     &--image {
       width: 169px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       margin-top: 8px;
     }
   }
@@ -222,6 +222,7 @@
 
   .main-catalog__structure {
     gap: 25px;
+    margin-bottom: 35px;
   }
 
   .main-catalog__next {
