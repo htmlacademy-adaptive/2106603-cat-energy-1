@@ -227,6 +227,7 @@ input[type="checkbox"]:disabled + .control__label {
 
     &::before {
       left: -100%;
+      top: 22px;
     }
   }
 
@@ -236,7 +237,7 @@ input[type="checkbox"]:disabled + .control__label {
     flex-wrap: wrap;
     row-gap: 32px;
     column-gap: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .form__wrap-button {
@@ -273,8 +274,8 @@ input[type="checkbox"]:disabled + .control__label {
     padding: 25px 26px 25px 26px;
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
-    margin-bottom: 65px;
+    row-gap: 14px;
+    margin-bottom: 60px;
 
     .form__control {
       height: 40px;
@@ -288,6 +289,7 @@ input[type="checkbox"]:disabled + .control__label {
       &::before {
         width: 40px;
         height: 40px;
+        top: -5px;
       }
     }
 
@@ -296,7 +298,7 @@ input[type="checkbox"]:disabled + .control__label {
         width: 18px;
         height: 18px;
         left: 11px;
-        top: 11px;
+        top: 8px;
       }
     }
   }
@@ -309,13 +311,13 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__comment {
     .form__title {
-      margin-bottom: 84px;
+      margin-bottom: 88px;
     }
   }
 
   .form__additional {
     .form__title {
-      margin-bottom: 54px;
+      margin-bottom: 57px;
     }
   }
 
@@ -326,7 +328,7 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__textarea {
     height: 175px;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
     padding: 10px 20px;
   }
 
