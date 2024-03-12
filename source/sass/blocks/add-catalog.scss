@@ -134,7 +134,7 @@
     grid-template-columns: 290px 280px 1fr;
     align-items: center;
     gap: 40px;
-    padding: 15px 0;
+    padding: 15px 0 16px;
     border: none;
     border-top: 1px solid $special_grey;
   }
@@ -153,12 +153,19 @@
     width: 330px;
   }
 
+  .add-catalog__link {
+    padding-top: 10px;
+    height: 40px;
+  }
+
   .add-catalog__descript {
     grid-template-columns: 2fr 1fr;
+    margin: 0;
+    margin-top: 10px;
   }
 
   .add-catalog__victory-img {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .add-catalog__victory-text {
