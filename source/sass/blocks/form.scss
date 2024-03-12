@@ -29,7 +29,7 @@
   @include list-reset;
   position: relative;
   padding: 15px 0 10px;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 
   @media (max-width: $mobile-width-max) {
     @include grey-line-form;
@@ -87,7 +87,7 @@
   background-color: $white;
   padding-right: 20px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   &::before {
     position: absolute;
@@ -96,7 +96,7 @@
     width: 1000vw;
     background-color: $green;
     left: 0;
-    top: 20px;
+    top: 15px;
     z-index: -1;
   }
 }
@@ -104,8 +104,8 @@
 .form__contact-imputs {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 13px;
+  margin-bottom: 25px;
 
   .form__control {
     position: relative;
@@ -122,7 +122,7 @@
   color: $dark-grey;
   text-transform: uppercase;
   flex-grow: 1;
-  margin-left: 13px;
+  margin-left: 15px;
   height: 100%;
   padding: 0 12px;
   border: 1px solid $grey-form;
@@ -151,7 +151,7 @@
 
 .form__comment {
   .form__title {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 }
 
@@ -176,8 +176,8 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 17px;
-  margin-bottom: 33px;
+  gap: 16px;
+  margin-bottom: 37px;
 }
 
 .control__label:hover {
