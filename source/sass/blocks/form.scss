@@ -342,22 +342,38 @@ input[type="checkbox"]:disabled + .control__label {
   .form__primary-data {
     display: flex;
     gap: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   .form__personal-list,
   .form__programs-list {
     flex-grow: 1;
     margin-bottom: 0;
+    max-width: 570px;
+  }
+
+  .form__programs-list {
+    padding: 27px 26px;
+  }
+
+  .form__contact-data {
+    .form__title {
+      margin-bottom: 77px;
+    }
   }
 
   .form__contact-imputs {
     flex-direction: row;
     gap: 80px;
+    margin-bottom: 70px;
+
+    .form__svg {
+      right: 15px;
+    }
   }
 
   .form__control {
-    flex-grow: 1;
+    flex-grow: 0;
   }
 
   .form__comment {
@@ -368,7 +384,7 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__additional {
     .form__title {
-      margin-bottom: 60px;
+      margin-bottom: 56px;
     }
   }
 
@@ -376,7 +392,7 @@ input[type="checkbox"]:disabled + .control__label {
     flex-direction: row;
     justify-content: flex-start;
     gap: 100px;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .form__wrap-button {
@@ -387,5 +403,22 @@ input[type="checkbox"]:disabled + .control__label {
   .form__button {
     width: 570px;
     padding: 14px 188px;
+  }
+
+  .form__control--email {
+    min-width: 569px;
+  }
+
+  .form__control--phone {
+    min-width: 572px;
+  }
+
+  .form__input {
+    padding: 0 0 0 18px;
+    flex-grow: 1;
+  }
+
+  .form__textarea {
+    margin-bottom: 70px;
   }
 }
