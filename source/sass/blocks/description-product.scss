@@ -50,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .description-product__wrapper {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .description-product__title {
@@ -61,7 +61,24 @@
 
   .description-product__list {
     grid-template-columns: 1fr 1fr;
-    gap: 50px 55px;
+    gap: 55px 60px;
+  }
+
+  .description-product__item::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+
+  .description-product__item::after {
+    position: absolute;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", sans-serif;
+    color: $lightgrey;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   .description-product__item {
@@ -85,6 +102,7 @@
 
     &--benefit::after {
       content: "1";
+      right: 25px;
     }
 
     &--comfort::after {
@@ -104,23 +122,6 @@
     margin: 150px 0 40px;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .description-product__item::before {
-    width: 80px;
-    height: 80px;
-    top: 40px;
-  }
-
-  .description-product__item::after {
-    position: absolute;
-    font-size: 280px;
-    line-height: 280px;
-    font-family: "Oswald", sans-serif;
-    color: $lightgrey;
-    top: 0;
-    right: 0;
-    z-index: -1;
   }
 }
 

@@ -29,7 +29,7 @@
   @include list-reset;
   position: relative;
   padding: 15px 0 10px;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 
   @media (max-width: $mobile-width-max) {
     @include grey-line-form;
@@ -87,7 +87,7 @@
   background-color: $white;
   padding-right: 20px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   &::before {
     position: absolute;
@@ -96,7 +96,7 @@
     width: 1000vw;
     background-color: $green;
     left: 0;
-    top: 20px;
+    top: 15px;
     z-index: -1;
   }
 }
@@ -104,8 +104,8 @@
 .form__contact-imputs {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 13px;
+  margin-bottom: 25px;
 
   .form__control {
     position: relative;
@@ -122,7 +122,7 @@
   color: $dark-grey;
   text-transform: uppercase;
   flex-grow: 1;
-  margin-left: 13px;
+  margin-left: 15px;
   height: 100%;
   padding: 0 12px;
   border: 1px solid $grey-form;
@@ -151,7 +151,7 @@
 
 .form__comment {
   .form__title {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 }
 
@@ -176,8 +176,8 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 17px;
-  margin-bottom: 33px;
+  gap: 16px;
+  margin-bottom: 37px;
 }
 
 .control__label:hover {
@@ -202,7 +202,7 @@ input[type="checkbox"]:disabled + .control__label {
 .form__button {
   @include status-green-button;
   margin-bottom: 20px;
-  height: 40px;
+  padding: 10px 78px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -227,6 +227,7 @@ input[type="checkbox"]:disabled + .control__label {
 
     &::before {
       left: -100%;
+      top: 22px;
     }
   }
 
@@ -236,7 +237,7 @@ input[type="checkbox"]:disabled + .control__label {
     flex-wrap: wrap;
     row-gap: 32px;
     column-gap: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .form__wrap-button {
@@ -248,7 +249,6 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__button {
     width: 284px;
-    height: 54px;
     padding: 14px 45px;
     margin: 0;
     font-size: 20px;
@@ -274,8 +274,8 @@ input[type="checkbox"]:disabled + .control__label {
     padding: 25px 26px 25px 26px;
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
-    margin-bottom: 65px;
+    row-gap: 14px;
+    margin-bottom: 60px;
 
     .form__control {
       height: 40px;
@@ -289,6 +289,7 @@ input[type="checkbox"]:disabled + .control__label {
       &::before {
         width: 40px;
         height: 40px;
+        top: -5px;
       }
     }
 
@@ -297,7 +298,7 @@ input[type="checkbox"]:disabled + .control__label {
         width: 18px;
         height: 18px;
         left: 11px;
-        top: 11px;
+        top: 7px;
       }
     }
   }
@@ -310,13 +311,13 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__comment {
     .form__title {
-      margin-bottom: 84px;
+      margin-bottom: 88px;
     }
   }
 
   .form__additional {
     .form__title {
-      margin-bottom: 54px;
+      margin-bottom: 57px;
     }
   }
 
@@ -327,7 +328,7 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__textarea {
     height: 175px;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
     padding: 10px 20px;
   }
 
@@ -341,22 +342,38 @@ input[type="checkbox"]:disabled + .control__label {
   .form__primary-data {
     display: flex;
     gap: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   .form__personal-list,
   .form__programs-list {
     flex-grow: 1;
     margin-bottom: 0;
+    max-width: 570px;
+  }
+
+  .form__programs-list {
+    padding: 27px 26px;
+  }
+
+  .form__contact-data {
+    .form__title {
+      margin-bottom: 77px;
+    }
   }
 
   .form__contact-imputs {
     flex-direction: row;
     gap: 80px;
+    margin-bottom: 70px;
+
+    .form__svg {
+      right: 15px;
+    }
   }
 
   .form__control {
-    flex-grow: 1;
+    flex-grow: 0;
   }
 
   .form__comment {
@@ -367,7 +384,7 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__additional {
     .form__title {
-      margin-bottom: 60px;
+      margin-bottom: 56px;
     }
   }
 
@@ -375,7 +392,7 @@ input[type="checkbox"]:disabled + .control__label {
     flex-direction: row;
     justify-content: flex-start;
     gap: 100px;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   .form__wrap-button {
@@ -385,7 +402,23 @@ input[type="checkbox"]:disabled + .control__label {
 
   .form__button {
     width: 570px;
-    height: 54px;
     padding: 14px 188px;
+  }
+
+  .form__control--email {
+    min-width: 569px;
+  }
+
+  .form__control--phone {
+    min-width: 572px;
+  }
+
+  .form__input {
+    padding: 0 0 0 18px;
+    flex-grow: 1;
+  }
+
+  .form__textarea {
+    margin-bottom: 70px;
   }
 }
