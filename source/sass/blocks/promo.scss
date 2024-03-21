@@ -19,6 +19,7 @@
     &::before {
       content: "";
       position: absolute;
+      background-color: $green;
       background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/index-background-desktop.jpg");
       background-repeat: no-repeat;
       background-size: 720px 694px;
