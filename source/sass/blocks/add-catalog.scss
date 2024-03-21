@@ -9,7 +9,7 @@
 
 .add-catalog__title {
   color: $special_dark-grey;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -40,7 +40,7 @@
 .add-catalog__victory {
   color: $white;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-catalog.png");
