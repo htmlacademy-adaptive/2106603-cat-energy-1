@@ -98,19 +98,19 @@
     font-size: 30px;
     line-height: 37px;
     width: 162px;
-    height: 77px;
+    height: 72px;
     padding-top: 15px;
   }
 
   .example__text {
     font-size: 14px;
     line-height: 14px;
-    top: 65px;
+    top: 62px;
     background-color: $white;
     padding: 0 5px;
 
     &--weight {
-      left: 30px;
+      left: 28px;
       width: 106px;
     }
 
@@ -212,7 +212,7 @@
     grid-template-areas:
       "description description description"
       "statistics statistics expenses";
-    margin-bottom: 67px;
+    margin-bottom: 69px;
   }
 
   .example__description {
