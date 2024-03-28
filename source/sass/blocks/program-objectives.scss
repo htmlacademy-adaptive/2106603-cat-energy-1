@@ -5,12 +5,11 @@
 .program-objectives__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .program-objectives__item {
   background-color: $lightgrey;
-  height: 266px;
   padding: 20px;
   padding-bottom: 0;
   display: grid;
@@ -33,8 +32,7 @@
   }
 
   .program-objectives__item {
-    height: 372px;
-    padding: 75px 29px 50px 52px;
+    padding: 75px 29px 55px 52px;
     column-gap: 0;
     row-gap: 24px;
     grid-template-areas:
@@ -58,9 +56,8 @@
 
   .program-objectives__item {
     width: 570px;
-    height: 374px;
     column-gap: 30px;
-    padding: 40px 50px 54px;
+    padding: 40px 50px 60px;
     grid-template-columns: 134px 1fr;
     grid-template-areas:
       "img title"

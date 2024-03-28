@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Рассмотрим аспекты правильного питания для котов, поможем выбрать подходящий именно для вашего питомца.">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!--16x16-->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest.json">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -53,7 +54,9 @@
       <section class="promo">
         <div class="promo__wrapper container">
           <h1 class="promo__title title-common">Функциональное питание для котов</h1>
-          <span class="promo__slogan slogan">Занялся собой? Займись котом!</span>
+          <span class="promo__slogan slogan">Занялся собой? Займись котом!
+            <a class="promo__link button" href="form.html">подобрать программу</a>
+          </span>
           <picture>
             <!--WebP-->
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/main-page/index-can.webp 1x, img/main-page/index-can@2x.webp 2x">
@@ -64,7 +67,6 @@
             <source media="(min-width: 768px)" srcset="img/main-page/index-can-tablet.png 1x, img/main-page/index-can-tablet@2x.png 2x">
             <img class="promo__img" src="img/main-page/index-can-mobile.png" srcset="img/main-page/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Cat Energy Slim.">
           </picture>
-          <a class="promo__link button" href="form.html">подобрать программу</a>
         </div>
       </section>
       <section class="program-objectives">
@@ -79,7 +81,13 @@
                 <source type="image/webp" srcset="img/main-page/cat-sits.webp 1x, img/main-page/cat-sits@2x.webp 2x">
                 <!--PNG-->
                 <source media="(min-width: 768px)" srcset="img/main-page/cat-sits-tablet.png 1x, img/main-page/cat-sits-tablet@2x.png 2x">
-                <img src="img/main-page/cat-sits.png" srcset="img/main-page/cat-sits@2x.png 2x" sizes="(min-width: 768px) 200px, (min-width: 1440px) 100px 106px, 50px" alt="Силуэт сидящего кота.">
+                <source media="(max-width: 767px)" srcset="img/main-page/cat-sits.png 1x, img/main-page/cat-sits.png@2x.png 2x">
+                <img src="img/main-page/cat-sits.png"
+                    srcset="img/main-page/cat-sits.png 50w,
+                            img/main-page/cat-sits-tablet.png 200w,
+                            img/main-page/cat-sits-tablet.png 100w"
+                    sizes="(min-width: 768px) 200px, (min-width: 1440px) 100px, 50px"
+                    alt="Силуэт сидящего кота.">
               </picture>
             </div>
             <p class="weight__description program-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -96,7 +104,13 @@
                 <source type="image/webp" srcset="img/main-page/cat-goes.webp 1x, img/main-page/cat-goes@2x.webp 2x">
                 <!--PNG-->
                 <source media="(min-width: 768px)" srcset="img/main-page/cat-goes-tablet.png 1x, img/main-page/cat-goes-tablet@2x.png 2x">
-                <img src="img/main-page/cat-goes.png" srcset="img/main-page/cat-goes@2x.png 2x" sizes="(min-width: 768px) 268px, (min-width: 1440px) 134px 100px, 67px" alt="Силуэт идущего кота.">
+                <source media="(max-width: 767px)" srcset="img/main-page/cat-goes.png 1x, img/main-page/cat-goes.png@2x.png 2x">
+                <img src="img/main-page/cat-goes.png"
+                    srcset="img/main-page/cat-goes.png 67w,
+                            img/main-page/cat-goes-tablet.png 268w,
+                            img/main-page/cat-goes-tablet.png 134w"
+                    sizes="(min-width: 768px) 268px, (min-width: 1440px) 134px, 67px"
+                    alt="Силуэт идущего кота.">
               </picture>
             </div>
             <p class="weight__description program-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -127,7 +141,7 @@
             </li>
             <li class="description-product__item description-product__item--result">
               <p class="description-product__text">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbspпитомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
               </p>
             </li>
           </ul>
@@ -170,7 +184,7 @@
         <div class="contacts__container container">
           <div class="contacts__wrapper">
             <b class="contacts__invite">приглашаем<br> к сотрудничеству дилеров!</b>
-            <address class="contacts__address">ул. Большая Конюшенная, д.19/8 <span>Санкт-Петербург</span></address>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></address>
           </div>
           <div class="contacts__map">
             <iframe
@@ -180,6 +194,18 @@
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
             </iframe>
+            <noscript>
+              <picture>
+                <!--WebP-->
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+                <!--PNG-->
+                <source media="(min-width: 1440px)" srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
+                <img src="img/map/map-mobile.png" srcset="img/map/map-mobile@2x.png 2x" width="320" height="362" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург.">
+              </picture>
+            </noscript>
           </div>
         </div>
       </section>
@@ -233,6 +259,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.min.js"></script>
+    <script defer src="js/script.min.js"></script>
   </body>
 </html>

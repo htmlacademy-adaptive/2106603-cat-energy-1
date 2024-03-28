@@ -1,5 +1,5 @@
 .promo {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -19,6 +19,7 @@
     &::before {
       content: "";
       position: absolute;
+      background-color: $green;
       background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-page/index-background-desktop.jpg");
       background-repeat: no-repeat;
       background-size: 720px 694px;
@@ -36,7 +37,7 @@
 }
 
 .promo__wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 63px;
   padding-top: 27px;
 }
 
@@ -49,6 +50,7 @@
 .promo__slogan {
   margin-bottom: 30px;
   display: block;
+  position: relative;
 }
 
 .promo__link {
@@ -58,7 +60,11 @@
   margin: 0 auto;
   font-size: 16px;
   line-height: 20px;
-  padding: 11px 0;
+  padding: 12px 0 10px;
+  position: absolute;
+  z-index: 2;
+  top: 315px;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,12 +79,12 @@
   }
 
   .promo__wrapper {
-    position: relative;
     margin-bottom: 0;
     padding-top: 65px;
   }
 
   .promo__slogan {
+    position: relative;
     margin-left: 90px;
     margin-bottom: 20px;
   }
@@ -86,13 +92,12 @@
   .promo__link {
     position: absolute;
     z-index: 2;
-    top: 294px;
-    left: 120px;
+    top: 70px;
+    left: 0;
     width: 244px;
-    height: 54px;
     font-size: 20px;
     line-height: 26px;
-    padding-top: 14px;
+    padding: 14px 0;
   }
 
   .promo__img {
@@ -119,13 +124,13 @@
 
   .promo__link {
     position: absolute;
-    top: 315px;
-    margin-left: 70px;
+    top: 75px;
+    margin-left: 0;
   }
 
   .promo__img {
     position: absolute;
-    top: 0;
+    top: 142px;
     right: 330px;
     width: 552px;
   }

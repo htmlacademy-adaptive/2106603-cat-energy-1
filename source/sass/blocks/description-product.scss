@@ -50,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .description-product__wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 
   .description-product__title {
@@ -74,7 +74,7 @@
     position: absolute;
     font-size: 280px;
     line-height: 280px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     color: $lightgrey;
     top: 0;
     right: 0;

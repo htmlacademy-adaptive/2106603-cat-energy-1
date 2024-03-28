@@ -1,7 +1,7 @@
 .form-selection {
   @include line-after-header;
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -27,8 +27,7 @@
 @media (min-width: $tablet-width) {
   .form-selection__wrapper {
     margin-top: 65px;
-    margin-bottom: 5px;
-    padding: 0 70px 60px;
+    padding: 0 70px 58px;
   }
 
   .form-selection__title {
